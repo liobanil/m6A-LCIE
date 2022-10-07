@@ -21,11 +21,11 @@ Experimental desing:
 Directories and content 
 -----
 
-1. Original data
+1. original_data
 
     Original sequencing data along with FastQC results. 
 
-2. Trimmed data
+2. trimmed_data
 
     Illumina Universal adapter removal using cutadapt along with FastQC results.
 
@@ -49,7 +49,7 @@ Directories and content
 
     QC results performed with ChIPQC and plots and results from R script using DiffBinf
     
-8. Scripts
+8. scripts
 
     Bash and R scripts used in this pipeline
     
