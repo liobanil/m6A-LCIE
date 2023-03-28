@@ -1,5 +1,5 @@
 # m6A-LCIE
-Author: *Anel de Liobani Lopez Gonzalez*
+Author: *AdLLG*
 
 Description
 ------
