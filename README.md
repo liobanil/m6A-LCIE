@@ -3,20 +3,23 @@ Author: *AdLLG*
 
 Description
 ------
-Scripts and files to run the pipeline to analyse differential bindind on meRIP seq data. 
+Scripts and files to run the pipeline to analyze differential binding on meRIP seq data. 
 
-Experimental desing
+Experimental design
 -----
-Neuronal primary cultures were treated with lactate for 6 and 24 hours. Then RNA was extracted and ployA tail was used to select the mRNA. The input and m6A immunoprecipitation was performed and libraries were made. They were sequenced in NovaSeq6000 150 bp paired end reads. Each condition had 3 replicates.
+Neuronal primary cultures were treated with lactate (10 mM) for 6 and 24 hours. Then RNA was extracted and ployA tail was used to select the mRNA. The m6A immunoprecipitation was performed and libraries were made. The samples were sequenced using Illumina 150 bp paired-end reads for both libraries (Core Lab or NovoGene). 
 
 Protocols: 
 MeRIP: [EpiQuik™ CUT&RUN m6A RNA Enrichment (MeRIP) Kit](https://www.epigentek.com/docs/P-9018.pdf)
 
 Library preparation: [Takara SMARTer Stranded Total RNA-Seq Kit v2 - Pico Input Mammalian](https://www.takarabio.com/documents/User%20Manual/SMARTer%20Stranded%20Total%20RNA/SMARTer%20Stranded%20Total%20RNA-Seq%20Kit%20v2%20-%20Pico%20Input%20Mammalian%20User%20Manual_050619.pdf)
 
-Experimental desing:
-
+Experimental design for the first library:
+3 replicates per condition (control, 6hrs, and 24 hrs).
 <img width="905" alt="exp_desing" style="width:400px;" src="https://user-images.githubusercontent.com/54646526/194641784-d18dda3b-521d-41ab-babd-9d014677954b.png">
+
+Experimental design for the second library:
+5 replicates per condition (control, 6hrs, and 24 hrs).
 
 Directories and content 
 -----
