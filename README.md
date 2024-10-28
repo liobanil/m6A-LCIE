@@ -41,6 +41,7 @@ Directories and content
 
 The following tree describes what each folder contains, recreating the working directory on Ibex. 
 
+'''
 m6A-LCIE 
   ├── raw_data
   ├── trimmed_data
@@ -58,7 +59,7 @@ m6A-LCIE
   ├── DGEA
   ├── qPCR
   └── MEA
-  
+'''
 
 **How to run the pipeline:**
 
