@@ -2,7 +2,6 @@
 Author: *AdLLG* :shipit:
 
 ## Introduction
-------
 Lactate is both a fuel and a signaling molecule that plays important roles in neuronal function and development. In the past decade, the post-transcriptional mark commonly referred to as m6A, a methylation in the position N6 of the adenosine of RNA, has been recognized to be involved in important processes such as development and cognitive processes, such as learning and memory. In this project, we aim to explore the relationship between lactate and the m6A mark.
 
 The purpose of this GitHub is to document the pipeline used to analyze and generate the results for the m6A data.
@@ -41,7 +40,7 @@ Directories and content
 
 The following tree describes what each folder contains, recreating the working directory on Ibex. 
 
-'''
+```
 m6A-LCIE 
   ├── raw_data
   ├── trimmed_data
@@ -59,7 +58,7 @@ m6A-LCIE
   ├── DGEA
   ├── qPCR
   └── MEA
-'''
+```
 
 **How to run the pipeline:**
 
