@@ -1,0 +1,13 @@
+mm39:
+    fna: "mm39/genome/ncbi-genomes-2023-06-01/GCF_000001635.27_GRCm39_genomic.fna"
+    gtf: "mm39/annotation/ncbi-genomes-2023-06-01/GCF_000001635.27_GRCm39_genomic.gtf"
+    index: "mm39/star_index_50/"
+
+scripts: "scripts/"
+raw_data: "raw_data/"
+trimmed_data: "trimmed_data/"
+mapped_data: "mapped_data/"
+counts: "counts/"
+DGEA: "DGEA/"
+MACS: "MACS/"
+DiffBind: "DiffBind/"
