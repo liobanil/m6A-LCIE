@@ -3,11 +3,15 @@ Author: *AdLLG*
 
 Introduction
 ------
-Lactate is both a fuel and a signaling molecule that plays important roles in neuronal function and development. In the past decade, the post-transcriptional mark commonly referred to as m6A, a methylation in the position N6 of the adenosine of RNA, has been recognized to be involved in important processes such as development and cognitive functions, such as learning and memory. It has not been completely described how lactate executes its function. Given the overlap between the m6A mark and lactate roles, an interplay between them can help elucidate better how lactate sustains neuronal function.
+Lactate is both a fuel and a signaling molecule that plays important roles in neuronal function and development. In the past decade, the post-transcriptional mark commonly referred to as m6A, a methylation in the position N6 of the adenosine of RNA, has been recognized to be involved in important processes such as development and cognitive processes, such as learning and memory. In this project, we aim to explore the relationship between lactate and the m6A mark.
 
 Experimental design
 -----
-Neuronal primary cultures were treated with lactate (10 mM) for 6 and 24 hours. Then RNA was extracted and ployA tail was used to select mRNA. Subsequently, immunoprecipitation of m6A-marked RNA molecules was performed and libraries were made. The samples were sequenced using Illumina 150 bp paired-end reads for both libraries. 
+
+![Experimental design and methodology description.](/img/Methods_Fig.png)
+
+
+Cortical neuronal primary cultures were treated with lactate (10 mM) for 6 and 24 hours. Total RNA was extracted followed by polyA selection to enrich for mRNA. Subsequently, immunoprecipitation of m6A-marked mRNA molecules was performed and sequencing libraries were made. The samples were sequenced using Illumina 150 bp paired-end reads for both libraries. 
 
 Protocols: 
 MeRIP: [EpiQuik™ CUT&RUN m6A RNA Enrichment (MeRIP) Kit](https://www.epigentek.com/docs/P-9018.pdf)
