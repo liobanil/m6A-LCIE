@@ -1,0 +1,768 @@
+---
+title: "DGEA of Input samples - m6a-5r"
+author: 
+  - Anel Lopez Gonzalez
+geometry: margin=1.5cm
+fontsize: 11pt
+output:
+  pdf_document:
+    toc: true
+    toc_depth: 3
+    fig_caption: true
+    df_print: kable
+header-includes:
+  - \usepackage[font=small,labelfont=bf]{caption}
+  - \usepackage{wrapfig}
+  - \usepackage{lipsum}
+---
+
+```{r, include=FALSE}
+# Required packages
+library(knitr)
+library(grid)
+library(gridExtra)
+library(kableExtra)
+library(tidyverse)
+```
+
+```{r, include=FALSE, eval=FALSE}
+setwd("Desktop/m6A-5r/DGEA/")
+```
+
+## Settings
+
+Set the working directory:
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
+```
+
+Load the needed libraries:
+
+```{r, echo=TRUE}
+#load libraries
+require(Biobase)
+require(stringr)
+require(limma)
+require(ggplot2)
+require(ggrepel)
+require(DESeq2)
+require("vsn")
+require("RColorBrewer")
+require(pheatmap)
+require(AnnotationDbi)
+require(org.Mm.eg.db)
+require(clusterProfiler)
+require(DOSE)
+require(enrichplot)
+require(ggbreak)
+```
+
+
+## NovoGene X201SC23041729_Z01_F001: 5 replicates.
+
+### Making the count matrix and the coldata
+
+We are gonna use all the files ReadsPerGene.out.tab and take the first column (all reads mapping in one feature). The we create the sample information matrix.
+
+```{r, eval=FALSE}
+#setwd("Desktop/")
+getwd()
+files <- list.files()
+files <- files[ grep("*Input*", files) ]
+
+gene_names <- read.table("gene_names.txt")
+
+counts <- matrix(0, nrow = 40213, ncol = 15)
+rownames(counts) <- gene_names$V1[5:40217]
+colnames(counts) <- gsub(pattern="_ReadsPerGene.out.tab",replacement="",gsub(pattern = "Input_", replacement = "", x = files))
+
+i=1
+for (file in files){
+  tmp <- read.table(file, header = FALSE)
+  print(head(i))
+  c <- tmp$V2[5:40217]
+  counts[,i] <- c
+  i= i + 1
+}
+
+write.table(counts, file = "count_matrix.tsv", row.names = gene_names$V1[5:40217], col.names = TRUE, sep = '\t')
+
+coldata <- data.frame(
+  sample = as.factor(c( "CTL.1", "CTL.2", "CTL.3", "CTL.4", "CTL.5","T24.1", "T24.2", "T24.3", "T24.4", "T24.5", "T6.1", "T6.2", "T6.3", "T6.4", "T6.5")),
+  time = as.factor(c( "T0", "T0",  "T0", "T0",  "T0", "T24", "T24", "T24", "T24", "T24", "T6", "T6", "T6", "T6", "T6")),
+  replicate = as.factor(c( "1", "2",  "3", "4", "5", "1", "2", "3", "4", "5", "1", "2",  "3", "4", "5" )),
+  row.names = colnames(counts) )
+
+write.table(coldata, file = "coldata.tsv", row.names = TRUE, col.names = TRUE, sep = '\t')
+```
+
+We will save the final counts and metadata so we don't have to run this code again and instead we will just read in the files in in future occasions.
+
+- counts: counts matrix for all 9 samples.  
+
+```{r echo = FALSE, results='asis'}
+counts <- read.table("count_matrix.tsv", header = TRUE, row.names = 1)
+
+head(counts[1:5,])
+```
+
+- coldata: sample information and design of the experiment.  
+
+```{r echo = FALSE, results='asis'}
+coldata <- read.table("coldata.tsv", header = TRUE, row.names = 1)
+
+coldata
+```
+
+### DESeq2
+
+References:  
+
+> [DESeq2 Vignette](http://bioconductor.org/packages/devel/bioc/vignettes/DESeq2/inst/doc/DESeq2.html#standard-workflow)  
+
+First we will load the un-normalized counts into a count matrix. We will also remove all the genes that correspond to mitochondrial genes (alll the gene names are in a premade file named mit_genes.txt). Then we create the DESeq object (dds). 
+
+```{r}
+#remove mitichondrial genes
+mit_genes <- read.table(file = 'mit_genes.txt',header = FALSE)
+count_matrix <- counts[!(row.names(counts) %in% mit_genes$V1),]
+#removed 37 genes
+
+#checking congruence between cts and coldata
+all(rownames(coldata) %in% colnames(count_matrix))
+all(rownames(coldata) == colnames(count_matrix))
+
+#create dds object 
+dds <- DESeqDataSetFromMatrix(countData = count_matrix,
+                              colData = coldata,
+                              design = ~ time)
+dds
+```
+
+Now lets filter low count genes. We will keep all the genes which have at least 10 counts in at least 2 samples.  
+
+```{r}
+#prefiltering
+keep <- rowSums(counts(dds) >= 10) >= 5
+dds <- dds[keep,]
+dim(dds)
+#22441 genes were filtered
+```
+
+Setting the reference level to T0 or the control samples.
+
+```{r}
+#define reference level
+dds$time <- relevel(dds$time, ref = "T0")
+```
+
+Now lets run the analysis:  estimation of size factors (which control for differences in the library size of the sequencing experiments), the estimation of dispersion for each gene, and fitting a generalized linear model.
+
+```{r}
+dds <- DESeq(dds)
+```
+
+Now we will set the contrasts, the contrast are calculated in the following manner:  
+
+$log2(\frac {treated}{untreated})$ which can be read like this as well $log_{2}treated-log_{2}untreated$.
+
+In this way, if a fold change is negative it means it is more expressed in the control whereas if its positive is more expressed in the treated sample.
+
+Finally we will save all the genes with a p-value lower than 0.1. 
+
+```{r}
+#save results from DESeq
+res_6 <- results(dds, contrast=c("time", "T6","T0"))
+res_24 <- results(dds, contrast=c("time", "T24","T0"))
+
+#contrast used
+resultsNames(dds)
+
+#results p < 0.05
+res_6_final <- filter(as.data.frame(res_6))
+res_24_final <- filter(as.data.frame(res_24))
+```
+
+We will see how the genes are behaving:
+
+We can see on the x axis the mean of the counts after normalization. Most of the genes we have an average mean above 100.  
+
+```{r, fig.show="hold", out.width="50%"}
+#log2 transformation
+resLFC24 <- lfcShrink(dds, coef="time_T24_vs_T0", type="apeglm")
+resLFC6 <- lfcShrink(dds, coef="time_T6_vs_T0", type="apeglm")
+#Ma plot
+png(filename = "PlotMA_6vsCTL.png", width = 15, height = 10, units = "cm", res=700)
+plotMA(resLFC6, ylim=c(-2,2))
+dev.off()
+
+png(filename = "PlotMA_24vsCTL.png", width = 15, height = 10, units = "cm", res=700)
+plotMA(resLFC24, ylim=c(-2,2))
+dev.off()
+```
+
+Make heatmap of differentially expressed genes
+
+```{r, fig.show="hold", out.width="50%"}
+deseq2VST <- vst(dds)
+
+# Convert the DESeq transformed object to a data frame
+deseq2VST <- assay(dds)
+deseq2VST <- as.data.frame(deseq2VST)
+deseq2VST$Gene <- rownames(deseq2VST)
+head(deseq2VST)
+
+# Keep only the significantly differentiated genes where the fold-change was at least 3
+sigGenes <- rownames(res_6_final[res_6_final$padj <= 0.05 & abs(res_6_final$log2FoldChange) > 1.5,])
+deseq2VST <- deseq2VST[deseq2VST$Gene %in% sigGenes, ]
+
+#prepare for ggplot
+require(reshape2)
+
+# First compare wide vs long version
+deseq2VST_wide <- deseq2VST
+deseq2VST_wide_log <- log10(deseq2VST_wide[,1:15] + 1)
+
+heatmap <- pheatmap(deseq2VST_wide_log, show_rownames = FALSE) 
+
+png(filename = "Heatmap_DiffGenes_Log10.png", width = 8, height = 10, units = "cm", res=700)
+heatmap
+dev.off()
+```
+
+```{r, fig.show="hold", out.width="32%"}
+#similar to BCV plots
+ntd <- normTransform(dds)
+vsd <- vst(dds, blind=FALSE)
+rld <- rlog(dds, blind=FALSE)
+meanSdPlot(assay(ntd))
+meanSdPlot(assay(vsd))
+meanSdPlot(assay(rld))
+```
+
+```{r, fig.show="hold", out.width="50%"}
+#dendogram of samples
+sampleDists <- dist(t(assay(vsd)))
+sampleDistMatrix <- as.matrix(sampleDists)
+rownames(sampleDistMatrix) <- vsd$sample
+colnames(sampleDistMatrix) <- NULL
+colors <- colorRampPalette( rev(brewer.pal(9, "Blues")) )(255)
+pheatmap(sampleDistMatrix,
+         clustering_distance_rows=sampleDists,
+         clustering_distance_cols=sampleDists,
+         col=colors)
+
+#PCA for thesis
+#label the dots
+pca_results <- plotPCA(vsd, intgroup = "time", returnData=TRUE)
+percentVar <- round(100 * attr(pca_results, "percentVar"))
+
+# Extract principal component scores (matrix)
+plot_data <- as.data.frame(pca_results)
+
+# Extract scoring labels from coldata
+scoring_labels <- rownames(coldata)
+plot_labels <- coldata$time
+
+
+# Map the condition labels to colors
+color_map <- c("T0" = "#CC6888", "T6" = "#4F94A6", "T24" = "#99EE99")
+
+
+pca_rna <- ggplot(data = plot_data, mapping = aes(x = PC1, y = PC2)) +
+  geom_point() +
+  geom_point(
+    mapping = aes(y = PC2, colour = factor(plot_labels)), data = plot_data,
+    size = 3
+  ) + #geom_text(aes(label = factor(scoring_labels))) + 
+  scale_color_manual(labels = c("Control", "Lacate 24hrs", "Lactate 6hrs"), values = color_map) +
+  xlab(paste0("PC1: ",percentVar[1],"% variance")) +
+  ylab(paste0("PC2: ",percentVar[2],"% variance")) + stat_ellipse(aes(group = factor(plot_labels), colour = factor(plot_labels)))+ coord_cartesian() +
+  theme_classic() + theme(legend.title = element_blank(), legend.position="top")
+
+ggsave(filename = "PCA_RNA_seq.png", plot = pca_rna, width = 15, height = 10, units = "cm", dpi = 600)
+```
+
+### Annotate DE genes  
+
+We will retrieve other information on the genes we have, for example, Gene ID, the same, and other nomenclature information. 
+
+```{r, echo=TRUE}
+#T0 vs T6
+#res_6_final
+
+res_6_final$symbol <- mapIds(org.Mm.eg.db, keys=rownames(res_6_final), column="SYMBOL", keytype="SYMBOL", multiVals="first")
+res_6_final$entrez <- mapIds(org.Mm.eg.db, keys=rownames(res_6_final), column="ENTREZID", keytype="SYMBOL", multiVals="first")
+res_6_final$name <- mapIds(org.Mm.eg.db, keys=rownames(res_6_final), column="GENENAME", keytype="SYMBOL", multiVals="first")
+res_6_final$refseq <- mapIds(org.Mm.eg.db, keys=rownames(res_6_final), column="REFSEQ", keytype="SYMBOL", multiVals="first")
+res_6_final$ensembl <- mapIds(org.Mm.eg.db, keys=rownames(res_6_final), column="ENSEMBL", keytype="SYMBOL", multiVals="first")
+
+#T0 vs T24
+#res_24_final
+
+res_24_final$symbol <- mapIds(org.Mm.eg.db, keys=rownames(res_24_final), column="SYMBOL", keytype="SYMBOL", multiVals="first")
+res_24_final$entrez <- mapIds(org.Mm.eg.db, keys=rownames(res_24_final), column="ENTREZID", keytype="SYMBOL", multiVals="first")
+res_24_final$name <- mapIds(org.Mm.eg.db, keys=rownames(res_24_final), column="GENENAME", keytype="SYMBOL", multiVals="first")
+res_24_final$refseq <- mapIds(org.Mm.eg.db, keys=rownames(res_24_final), column="REFSEQ", keytype="SYMBOL", multiVals="first")
+res_24_final$ensembl <- mapIds(org.Mm.eg.db, keys=rownames(res_24_final), column="ENSEMBL", keytype="SYMBOL", multiVals="first")
+
+#write tables
+write.csv(x = res_6_final, file = "DEG_T0vsT6.csv", row.names=TRUE)
+write.csv(x = res_24_final, file = "DEG_T0vsT24.csv", row.names=TRUE)
+```
+
+```{r}
+#volvano plot 6 hrs vs ctl
+t_log2FC <- log2(1.5)
+t_padj <- 0.05
+neg_lpadj_lim <- 100
+l2FC_lim <- 2.5
+
+#dds <- readRDS("results/data/dds.RDS")
+
+### convert res to a data frame, remove rows with NA, and add ref genes as column
+res_df <- as.data.frame(res_6_final) %>% na.omit()
+res_df$gene_id <- rownames(res_df)
+
+### add symbol, id, and description to the data frame
+annotation_res_df <- as.data.frame(rowData(dds)) 
+annotation_res_df$gene_id <- rownames(annotation_res_df)
+
+annotation_res_df2 <- annotation_res_df %>%
+  dplyr::select(gene_id, gene_id) %>% right_join(res_df, by = "gene_id") %>%  ## join annotation and res_df
+  mutate(color = case_when((padj < t_padj & log2FoldChange > t_log2FC) ~ "up",
+                           (padj < t_padj & log2FoldChange < -t_log2FC) ~ "down",
+                           TRUE ~ "no_effect")) %>%
+  mutate(clFC = if_else(log2FoldChange < -l2FC_lim, -l2FC_lim, log2FoldChange)) %>%
+  mutate(clFC = if_else(log2FoldChange > l2FC_lim, l2FC_lim, log2FoldChange)) %>%
+  mutate(cpadj = if_else(-log10(padj) > neg_lpadj_lim, 10^-neg_lpadj_lim, padj)) %>%
+  mutate(mark = if_else(log2FoldChange < -l2FC_lim |
+                          log2FoldChange > l2FC_lim |
+                          -log10(padj) > neg_lpadj_lim, "out", "in"))
+ 
+### list of top 30 differentially expressed genes
+top30degs <- annotation_res_df2 %>% filter(padj < t_padj,
+                                          abs(log2FoldChange) > t_log2FC,
+                                          baseMean >= 50) %>%
+  arrange(padj) %>%
+  slice_head(n = 30) %>%
+  dplyr::select(symbol) %>% unlist()
+
+annotation_res_df2$deg_label <- if_else(annotation_res_df2$symbol %in% top30degs, annotation_res_df2$symbol, NA)
+
+ggplot(data = annotation_res_df2, aes(x=clFC, y=-log10(cpadj), color = color, shape = mark, label = deg_label)) +
+  geom_vline(xintercept = c(-t_log2FC, t_log2FC), color = "gray40", linetype = "dashed")+
+  geom_hline(yintercept = c(-log10(t_padj)), color = "gray40", linetype = "dashed") +
+  geom_point(size = 3) +
+  geom_text_repel(max.overlaps = Inf, min.segment.length = 0, show.legend = F)+
+  scale_shape_manual(values = c(19,17), guide = "none")+
+  scale_color_manual(values = c("#E41A1C", "#dddddd", "#095228"),
+                     labels = c("downregulated", "unchanged", "upregulated")) +
+  scale_x_continuous(breaks = seq(-l2FC_lim, l2FC_lim, 1))+
+  labs(color = "", x = expression("log"[2]*" FC"), y = expression("-log"[10]*" adjusted p-value"),
+       title = paste("Differentially expressed genes identified in Lacate 6hrs and Control")) +
+  coord_cartesian(ylim = c(0,neg_lpadj_lim), xlim = c(-l2FC_lim,l2FC_lim)) +
+  theme_classic() +
+  theme(plot.title = element_text(hjust = 0.5),
+        legend.position = "top")
+
+ggsave(filename = "../../../volcano_LAC6vsCTL.png", width = 6, height = 6, units = "in")
+```
+
+```{r}
+#volvano plot for 24 hrs vs ctl
+t_log2FC <- log2(1.5)
+t_padj <- 0.05
+neg_lpadj_lim <- 30
+l2FC_lim <- 2.5
+
+#dds <- readRDS("results/data/dds.RDS")
+
+### convert res to a data frame, remove rows with NA, and add ref genes as column
+res_df <- as.data.frame(res_24_final) %>% na.omit()
+res_df$gene_id <- rownames(res_df)
+
+### add symbol, id, and description to the data frame
+annotation_res_df <- as.data.frame(rowData(dds)) 
+annotation_res_df$gene_id <- rownames(annotation_res_df)
+
+annotation_res_df2 <- annotation_res_df %>%
+  dplyr::select(gene_id, gene_id) %>% right_join(res_df, by = "gene_id") %>%  ## join annotation and res_df
+  mutate(color = case_when((padj < t_padj & log2FoldChange > t_log2FC) ~ "up",
+                           (padj < t_padj & log2FoldChange < -t_log2FC) ~ "down",
+                           TRUE ~ "no_effect")) %>%
+  mutate(clFC = if_else(log2FoldChange < -l2FC_lim, -l2FC_lim, log2FoldChange)) %>%
+  mutate(clFC = if_else(log2FoldChange > l2FC_lim, l2FC_lim, log2FoldChange)) %>%
+  mutate(cpadj = if_else(-log10(padj) > neg_lpadj_lim, 10^-neg_lpadj_lim, padj)) %>%
+  mutate(mark = if_else(log2FoldChange < -l2FC_lim |
+                          log2FoldChange > l2FC_lim |
+                          -log10(padj) > neg_lpadj_lim, "out", "in"))
+ 
+### list of top 30 differentially expressed genes
+top30degs <- annotation_res_df2 %>% filter(padj < t_padj,
+                                          abs(log2FoldChange) > t_log2FC,
+                                          baseMean >= 50) %>%
+  arrange(padj) %>%
+  slice_head(n = 30) %>%
+  dplyr::select(symbol) %>% unlist()
+
+annotation_res_df2$deg_label <- if_else(annotation_res_df2$symbol %in% top30degs, annotation_res_df2$symbol, NA)
+
+ggplot(data = annotation_res_df2, aes(x=clFC, y=-log10(cpadj), color = color, shape = mark, label = deg_label)) +
+  geom_vline(xintercept = c(-t_log2FC, t_log2FC), color = "gray40", linetype = "dashed")+
+  geom_hline(yintercept = c(-log10(t_padj)), color = "gray40", linetype = "dashed") +
+  geom_point(size = 3) +
+  geom_text_repel(max.overlaps = Inf, min.segment.length = 0, show.legend = F)+
+  scale_shape_manual(values = c(19,17), guide = "none")+
+  scale_color_manual(values = c("#E41A1C", "#dddddd", "#095228"),
+                     labels = c("downregulated", "unchanged", "upregulated")) +
+  scale_x_continuous(breaks = seq(-l2FC_lim, l2FC_lim, 1))+
+  labs(color = "", x = expression("log"[2]*" FC"), y = expression("-log"[10]*" adjusted p-value"),
+       title = paste("Differentially expressed genes identified in Lacate 24hrs and Control")) +
+  coord_cartesian(ylim = c(0,neg_lpadj_lim), xlim = c(-l2FC_lim,l2FC_lim)) +
+  theme_classic() +
+  theme(plot.title = element_text(hjust = 0.5),
+        legend.position = "top")
+
+ggsave(filename = "../../../volcano_LAC24vsCTL.png", width = 6, height = 6, units = "in")
+```
+
+
+Select and filter DEGs:
+
+```{r}
+p.val <- 0.05
+lfc <- 1
+
+res_6_final_deg <- res_6_final[abs(res_6_final$log2FoldChange) > lfc & res_6_final$padj < p.val,]
+res_6_final_deg_up <- res_6_final[res_6_final$log2FoldChange > lfc & res_6_final$padj <  p.val,]
+res_6_final_deg_dn <- res_6_final[res_6_final$log2FoldChange < -lfc & res_6_final$padj <  p.val,]
+
+res_24_final_deg <- res_24_final[abs(res_24_final$log2FoldChange) > lfc & res_24_final$padj < p.val,]
+res_24_final_deg_up <- res_24_final[res_24_final$log2FoldChange > lfc & res_24_final$padj < p.val,]
+res_24_final_deg_dn <- res_24_final[res_24_final$log2FoldChange < -lfc & res_24_final$padj < p.val,]
+```
+
+
+```{r}
+p.val <- 0.05
+lfc <- 1.5
+
+resLFC6_DF <- as.data.frame(resLFC6)
+
+res_6_final_deg_LFC <- resLFC6[abs(resLFC6$log2FoldChange) > lfc & resLFC6$padj < p.val,]
+res_6_final_deg_up_LFC <- resLFC6[resLFC6$log2FoldChange > lfc & resLFC6$padj <  p.val,]
+res_6_final_deg_dn_LFC <- resLFC6[resLFC6$log2FoldChange < -lfc & resLFC6$padj <  p.val,]
+```
+
+### Enrichment analysis  
+
+We will try to perform an enrichment analysis but usually these sort of analysis are performed with larger sets of genes. 
+
+These GO analysis is performed taking all the genes regardless if they are up or down regulated.
+
+```{r, fig.show="hold", out.width="50%"}
+#GO cmd 
+genes6 <- res_6_final_deg$entrez[!is.na(res_6_final_deg$entrez)] 
+genes24 <- res_24_final_deg$entrez[!is.na(res_24_final_deg$entrez)] 
+
+ego6 <- enrichGO(gene         = genes6,
+                OrgDb         = org.Mm.eg.db,
+                keyType       = 'ENTREZID',
+                ont           = "MF", #ALL, BP, CC, or MF
+                pAdjustMethod = "BH",
+                pvalueCutoff  = 0.05,
+                qvalueCutoff  = 0.1,
+        readable      = TRUE)
+head(ego6)
+
+saveRDS(ego6, file = "ego6_MF_fc1.rds")
+
+ego24 <- enrichGO(gene        = genes24,
+                OrgDb         = org.Mm.eg.db,
+                ont           = "MF", #ALL, BP, CC, or MF
+                pAdjustMethod = "BH",
+                pvalueCutoff  = 0.05,
+                qvalueCutoff  = 0.1,
+        readable      = TRUE)
+head(ego24)
+
+saveRDS(ego24, file = "ego24_MF_fc1.rds")
+
+plotORA <- function(ego6, ego24, enrich){
+write.csv(paste0("ego_6_",enrich,"_FC_1.csv"), x=as.data.frame(ego6))
+#dotplot
+png(paste0("ego_6_",enrich,"_FC_1.png"), res = 700, units = "cm", height = 12, width = 14)
+print({
+dotplot(ego6, showCategory = 20, font.size = 10,
+  title = "GO T6 vs CTL") + scale_y_discrete(labels=function(egoBP) str_wrap(egoBP, width=50))
+})
+dev.off()
+
+
+### 24 hrs
+write.csv(paste0("ego_24_",enrich,"_FC_1.csv"), x=as.data.frame(ego24))
+
+png(paste0("ego_24_",enrich,"_FC_1.png"), res = 700, units = "cm", height = 12, width = 14)
+print({
+dotplot(ego24, showCategory = 20, font.size = 10,
+  title = "GO T24 vs CTL") + scale_y_discrete(labels=function(egoBP) str_wrap(egoBP, width=50))
+})
+dev.off()
+}
+
+###
+#mae plots
+plotORA(ego6 = readRDS("../../../IBEX_m6a-5r/GO objects/ego6_ALL_fc1.rds"), 
+        ego24 = readRDS("../../../IBEX_m6a-5r/GO objects/ego24_ALL_fc1.rds"), enrich = "ALL")
+
+plotORA(ego6 = readRDS("../../../IBEX_m6a-5r/GO objects/ego6_BP_fc1.rds"), 
+        ego24 = readRDS("../../../IBEX_m6a-5r/GO objects/ego24_BP_fc1.rds"), enrich = "BP")
+
+plotORA(ego6 = readRDS("../../../IBEX_m6a-5r/GO objects/ego6_CC_fc1.rds"), 
+        ego24 = readRDS("../../../IBEX_m6a-5r/GO objects/ego24_CC_fc1.rds"), enrich = "CC")
+
+plotORA(ego6 = readRDS("../../../IBEX_m6a-5r/GO objects/ego6_MF_fc1.rds"), 
+        ego24 = readRDS("../../../IBEX_m6a-5r/GO objects/ego24_MF_fc1.rds"), enrich = "MF")
+
+#####
+#KEGG
+keeg6 <- enrichKEGG(gene      = genes,
+                keyType       = 'ENTREZID',
+                pAdjustMethod = "BH",
+                pvalueCutoff  = 0.05,
+                qvalueCutoff  = 0.1)
+
+png("KEEG_all_t6.png", res = 700, units = "cm", height = 8, width = 14)
+dotplot(keeg6, showCategory = 20,
+  font.size = 10,
+  title = "GO T0 vs T6 - All")
+dev.off()
+
+```
+
+Now we will take only the up regulated genes:
+
+```{r, fig.show="hold", out.width="50%"}
+#GO cmd 
+ego6_up <- enrichGO(gene         = res_6_final_deg_up$entrez[!is.na(res_6_final_deg_up$entrez)],
+                OrgDb            = org.Mm.eg.db,
+                ont              = "BP", #ALL, BP, CC, or MF
+                pAdjustMethod    = "BH",
+                pvalueCutoff     = 0.05,
+                qvalueCutoff     = 0.1,
+        readable      = TRUE)
+head(ego6_up)
+
+ego24_up <- enrichGO(gene     = res_24_final_deg_up$entrez[!is.na(res_24_final_deg_up$entrez)],
+                OrgDb         = org.Mm.eg.db,
+                ont           = "BP", #ALL, BP, CC, or MF
+                pAdjustMethod = "BH",
+                pvalueCutoff  = 0.05,
+                qvalueCutoff  = 0.1,
+        readable      = TRUE)
+head(ego24_up)
+
+#dotplot
+png("GO_up_t6.png", res = 700, units = "cm", height = 12, width = 14)
+dotplot(ego6_up, showCategory = 20,
+  font.size = 7,
+  title = "GO T0 vs T6 - Up") + scale_y_discrete(labels=function(egoBP) str_wrap(egoBP, width=60))
+dev.off()
+
+png("GO_up_t24.png", res = 700, units = "cm", height = 12, width = 14)
+dotplot(ego24_up, showCategory = 20, 
+  font.size = 7,
+  title = "GO T0 vs T24 - Up") + scale_y_discrete(labels=function(egoBP) str_wrap(egoBP, width=50))
+dev.off()
+```
+
+Now we will take only the down regulated genes:
+
+```{r, fig.show="hold", out.width="50%"}
+#GO cmd 
+ego6_dn <- enrichGO(gene         = res_6_final_deg_dn$entrez[!is.na(res_6_final_deg_dn$entrez)],
+                OrgDb            = org.Mm.eg.db,
+                ont              = "ALL",
+                pAdjustMethod    = "BH",
+                pvalueCutoff     = 0.05,
+                qvalueCutoff     = 0.1,
+        readable      = TRUE)
+head(ego6_dn)
+
+ego24_dn <- enrichGO(gene     = res_24_final_deg_dn$entrez[!is.na(res_24_final_deg_dn$entrez)],
+                OrgDb         = org.Mm.eg.db,
+                ont           = "ALL",
+                pAdjustMethod = "BH",
+                pvalueCutoff  = 0.05,
+                qvalueCutoff  = 0.1,
+        readable      = TRUE)
+head(ego24_dn)
+
+#dotplot
+png("GO_dn_t6.png", res = 700, units = "cm", height = 12, width = 14)
+dotplot(ego6_dn, showCategory = 20,
+  font.size = 7,
+  title = "GO T0 vs T6 - Down")
+dev.off()
+
+png("GO_dn_t24.png", res = 700, units = "cm", height = 12, width = 14)
+dotplot(ego24_dn, showCategory = 20, 
+  font.size = 6,
+  title = "GO T0 vs T24 - Down")
+dev.off()
+```
+
+### Gene Set Enrichment Analysis
+
+```{r}
+#####
+genes_sorted_6 <- res_6_final$log2FoldChange
+names(genes_sorted_6) <- res_6_final_deg$ensembl
+genes_sorted_6 <- na.omit(genes_sorted_6)
+genes_sorted_6 <- sort(genes_sorted_6, decreasing = TRUE)
+
+
+gse_6 <- gseGO(geneList=genes_sorted_6, 
+             ont ="MF", 
+             keyType = "ENSEMBL",
+             minGSSize = 3, 
+             maxGSSize = 800, 
+             pvalueCutoff = 0.05, 
+             verbose = TRUE, 
+             OrgDb = org.Mm.eg.db, 
+             pAdjustMethod = "none")
+
+head(gse_6)
+
+saveRDS(gse_6, file = "gse6_MF.rds")
+
+genes_sorted_24 <- res_24_final$log2FoldChange
+names(genes_sorted_24) <- res_24_final_deg$ensembl
+genes_sorted_24 <- na.omit(genes_sorted_24)
+genes_sorted_24 <- sort(genes_sorted_24, decreasing = TRUE)
+
+gse_24 <- gseGO(geneList=genes_sorted_24, 
+             ont ="MF", 
+             keyType = "ENSEMBL",
+             minGSSize = 3, 
+             maxGSSize = 800, 
+             pvalueCutoff = 0.05, 
+             verbose = TRUE, 
+             OrgDb = org.Mm.eg.db, 
+             pAdjustMethod = "none")
+
+head(gse_24)
+
+saveRDS(gse_24, file = "gse24_MF.rds")
+#####
+
+plotGSE <- function(gse_6, gse_24, enrich){
+### 6 hrs
+  
+write.csv(paste0("gse_6_",enrich,"_FC_1.csv"), x=as.data.frame(gse_6))
+
+png(paste0("gse_6_",enrich,"_FC_1.png"), res = 700, units = "cm", height = 10, width = 18)
+print({
+dotplot(gse_6, showCategory=, split=".sign", font.size = 10) + theme(legend.position = "right") + facet_grid(.~.sign)  + scale_y_discrete(labels=function(egoBP) str_wrap(egoBP, width=60))
+})
+dev.off()
+
+png(paste0("gse_6_emmaplot_",enrich,"_FC_1.png"), res = 300, units = "cm", height = 20, width = 23)
+print({
+emapplot(pairwise_termsim(gse_6), showCategory = 20, font.size = 5)
+})
+dev.off()
+
+### 24 hrs
+
+write.csv(paste0("gse_24_",enrich,"_FC_1.csv"), x=as.data.frame(gse_24))
+
+png(paste0("gse_24_",enrich,"_FC_1.png"),  res = 300, units = "cm", height = 16, width = 20)
+print({
+dotplot(gse_24, showCategory=20, split=".sign", font.size = 10) + facet_grid(.~.sign)  + scale_y_discrete(labels=function(egoBP) str_wrap(egoBP, width=70))
+})
+dev.off()
+
+png(paste0("gse_24_emmaplot_",enrich,"_FC_1.png"), res = 300, units = "cm", height = 20, width = 20)
+print({emapplot(pairwise_termsim(gse_24), showCategory = 10, font.size = 5)})
+dev.off()
+}
+
+#####
+#make plots for previously created gse objects
+plotGSE(gse_6 = readRDS("../../../IBEX_m6a-5r/GO objects/gse6_ALL.rds"),
+        gse_24 = readRDS("../../../IBEX_m6a-5r/GO objects/gse24_ALL.rds"), enrich = "ALL")
+
+plotGSE(gse_6 = readRDS("../../../IBEX_m6a-5r/GO objects/gse6_BP.rds"),
+        gse_24 = readRDS("../../../IBEX_m6a-5r/GO objects/gse24_BP.rds"), enrich = "BP")
+
+plotGSE(gse_6 = readRDS("../../../IBEX_m6a-5r/GO objects/gse6_CC.rds"),
+        gse_24 = readRDS("../../../IBEX_m6a-5r/GO objects/gse24_CC.rds"), enrich = "CC")
+
+plotGSE(gse_6 = readRDS("../../../IBEX_m6a-5r/GO objects/gse6_MF.rds"),
+        gse_24 = readRDS("../../../IBEX_m6a-5r/GO objects/gse24_MF.rds"), enrich = "MF")
+```
+
+
+### Check tissue relatedness
+
+```{r}
+library(TissueEnrich)
+
+genes_6<-res_6_final_deg$symbol
+gs<-GeneSet(geneIds=genes_6,organism="Mus Musculus",geneIdType=SymbolIdentifier())
+output_6<-teEnrichment(inputGenes = gs)
+seEnrichmentOutput<-output_6[[1]]
+enrichmentOutput<-setNames(data.frame(assay(seEnrichmentOutput),row.names = rowData(seEnrichmentOutput)[,1]), colData(seEnrichmentOutput)[,1])
+enrichmentOutput$Tissue<-row.names(enrichmentOutput)
+head(enrichmentOutput)
+
+ggplot(enrichmentOutput,aes(x=reorder(Tissue,-Log10PValue),y=Log10PValue,label = Tissue.Specific.Genes,fill = Tissue))+geom_bar(stat = 'identity')+labs(x='', y = '-LOG10(P-Adjusted)', title = "DEG 6 hrs")+theme_bw()+theme(legend.position="none")+theme(plot.title = element_text(hjust = 0.5,size = 20),axis.title = element_text(size=15))+theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1),panel.grid.major= element_blank(),panel.grid.minor = element_blank())
+
+ggplot(enrichmentOutput,aes(x=reorder(Tissue,-fold.change),y=fold.change,label = Tissue.Specific.Genes,fill = Tissue))+geom_bar(stat = 'identity')+labs(x='', y = 'Fold Change', title = "DEG 6 hrs")+theme_bw()+theme(legend.position="none")+theme(plot.title = element_text(hjust = 0.5,size = 20),axis.title = element_text(size=15))+theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1),panel.grid.major= element_blank(),panel.grid.minor = element_blank())
+
+genes_24<-res_24_final_deg$symbol
+gs<-GeneSet(geneIds=genes_24,organism="Mus Musculus",geneIdType=SymbolIdentifier())
+output_24<-teEnrichment(inputGenes = gs)
+seEnrichmentOutput<-output_24[[1]]
+enrichmentOutput<-setNames(data.frame(assay(seEnrichmentOutput),row.names = rowData(seEnrichmentOutput)[,1]), colData(seEnrichmentOutput)[,1])
+enrichmentOutput$Tissue<-row.names(enrichmentOutput)
+head(enrichmentOutput)
+
+ggplot(enrichmentOutput,aes(x=reorder(Tissue,-Log10PValue),y=Log10PValue,label = Tissue.Specific.Genes,fill = Tissue))+geom_bar(stat = 'identity')+labs(x='', y = '-LOG10(P-Adjusted)', title = "DEG 24 hrs")+theme_bw()+theme(legend.position="none")+theme(plot.title = element_text(hjust = 0.5,size = 20),axis.title = element_text(size=15))+theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1),panel.grid.major= element_blank(),panel.grid.minor = element_blank())
+
+ggplot(enrichmentOutput,aes(x=reorder(Tissue,-fold.change),y=fold.change,label = Tissue.Specific.Genes,fill = Tissue))+geom_bar(stat = 'identity')+labs(x='', y = 'Fold Change', title = "DEG 24 hrs")+theme_bw()+theme(legend.position="none")+theme(plot.title = element_text(hjust = 0.5,size = 20),axis.title = element_text(size=15))+theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1),panel.grid.major= element_blank(),panel.grid.minor = element_blank())
+
+genes<-rownames(count_matrix)
+gs<-GeneSet(geneIds=genes,organism="Mus Musculus",geneIdType=SymbolIdentifier())
+output<-teEnrichment(inputGenes = gs)
+seEnrichmentOutput<-output[[1]]
+enrichmentOutput<-setNames(data.frame(assay(seEnrichmentOutput),row.names = rowData(seEnrichmentOutput)[,1]), colData(seEnrichmentOutput)[,1])
+enrichmentOutput$Tissue<-row.names(enrichmentOutput)
+head(enrichmentOutput)
+
+ggplot(enrichmentOutput,aes(x=reorder(Tissue,-Log10PValue),y=Log10PValue,label = Tissue.Specific.Genes,fill = Tissue))+geom_bar(stat = 'identity')+labs(x='', y = '-LOG10(P-Adjusted)', title = "all genes") +theme_bw()+theme(legend.position="none")+theme(plot.title = element_text(hjust = 0.5,size = 20),axis.title = element_text(size=15))+theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1),panel.grid.major= element_blank(),panel.grid.minor = element_blank())
+
+ggplot(enrichmentOutput,aes(x=reorder(Tissue,-fold.change),y=fold.change,label = Tissue.Specific.Genes,fill = Tissue))+geom_bar(stat = 'identity')+labs(x='', y = 'Fold Change', title = "All genes") + theme_bw()+theme(legend.position="none")+theme(plot.title = element_text(hjust = 0.5,size = 20),axis.title = element_text(size=15))+theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1),panel.grid.major= element_blank(),panel.grid.minor = element_blank())
+```
+
+
+## make tree like plot 
+
+```{r}
+ego <- readRDS("../../../IBEX_m6a-5r/GO objects/ego24_MF_fc1.rds")
+
+ego.d <- pairwise_termsim(ego)
+
+png(paste("ego_24_treeplot_MF_FC1.png", sep = ""), res = 700, units = "cm", height = 18, width = 32)
+treeplot(ego.d, cluster.params = list(label_words_n = 2, method = "average"), hilight.params = list(hilight=TRUE, align="both")) +
+        theme(legend.position="bottom")
+dev.off()
+```
+
+
+
+
+

@@ -1,0 +1,15 @@
+configfile: "config/config.yaml"
+
+SAMPLES = {f for f in os.listdir(config["raw_data"]) if f.startswith("I")}
+
+CONDITIONS = {"c_1", "c_2", "c_3", "t6_1", "t6_2", "t6_3", "t24_1", "t24_2", "t24_3"}
+
+rule all:
+	input:
+		expand(config["MACS"] + "{con}/{con}_peaks.narrowPeak", con=CONDITIONS)
+
+include: "rules/rawdata_qc.smk"
+include: "rules/trimming_qc.smk"
+include: "rules/star.smk"
+include: "rules/macs.smk"
+
