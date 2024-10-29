@@ -1,0 +1,12 @@
+"","ID","Description","GeneRatio","BgRatio","pvalue","p.adjust","qvalue","geneID","Count"
+"GO:0043235","GO:0043235","receptor complex","30/514","408/28886",7.37898657934978e-11,2.66381415514527e-08,2.47001866550866e-08,"Eng/Cd44/Bmp2/Cd40/Hjv/Gpr63/Lepr/Epha8/Epha2/Kctd8/Gabrg1/Gprc5a/Arntl/Itga11/Htr1b/Col10a1/Chrne/Trpv3/Gprc5c/Syk/Ahrr/Htr2a/Gdnf/Itga5/Trat1/Epha3/Cd6/Gpr101/Gabre/Htr2c",30
+"GO:0098793","GO:0098793","presynapse","26/514","489/28886",8.91516790937548e-07,0.000160918780764227,0.000149211757641126,"Bdnf/Ntsr1/Ngf/Penk/Slc1a7/Nmu/Btbd8/Rimbp2/Chrm2/Blvrb/Ntf5/Mctp2/Drd4/Lpar2/Htr1b/Tpbg/Nts/Scgn/Pcsk1/Pcdh17/Adcy8/Epha3/Slc5a7/Adcyap1/Syt4/Fosl1",26
+"GO:0044306","GO:0044306","neuron projection terminus","14/514","210/28886",2.66608523075853e-05,0.00271644533965505,0.00251882087187726,"Bdnf/Ntsr1/Ngf/Penk/Nmu/Chrm2/Blvrb/Drd4/Tpbg/Nts/Scgn/Pcsk1/Adcyap1/Syt4",14
+"GO:0062023","GO:0062023","collagen-containing extracellular matrix","20/514","393/28886",3.0099117336898e-05,0.00271644533965505,0.00251882087187726,"Col9a1/Tmeff2/Thbs1/Fbn1/Fgl2/Slit2/Nphs1/Ntn5/Acan/Muc2/Impg1/Col10a1/Adamts2/Col1a1/Tgfb3/Fgf10/Egflam/Adamts1/Smoc2/Vegfa",20
+"GO:0005604","GO:0005604","basement membrane","10/514","119/28886",5.49153186976732e-05,0.003964886009972,0.00367643607281265,"Col9a1/Tmeff2/Fbn1/Nphs1/Ntn5/Acan/Egflam/Adamts1/Smoc2/Vegfa",10
+"GO:0005667","GO:0005667","transcription regulator complex","21/514","475/28886",0.000142387609577653,0.00769753423096246,0.00713752991819817,"Arid5a/Twist2/Lhx3/Nr6a1/Nr4a2/Pax1/Nr4a3/Tal1/Dmbx1/Heyl/Arntl/Barx2/Pou2f3/Myocd/Hdac5/Six4/Fos/Sap18/Crem/Mkx/Pou4f3",21
+"GO:0043679","GO:0043679","axon terminus","12/514","188/28886",0.000149259666528358,0.00769753423096246,0.00713752991819817,"Bdnf/Ntsr1/Penk/Nmu/Chrm2/Blvrb/Drd4/Tpbg/Nts/Scgn/Pcsk1/Adcyap1",12
+"GO:0043204","GO:0043204","perikaryon","10/514","140/28886",0.00021267610846172,0.00959700939433513,0.00889881611721409,"Cnga3/Bdnf/Ntsr1/Crh/Penk/Esr2/Pcsk1/Pde10a/Slc5a7/Adcyap1",10
+"GO:0005788","GO:0005788","endoplasmic reticulum lumen","7/514","84/28886",0.000754128262891918,0.0302489225448869,0.0280482792514187,"Bdnf/Slc27a2/Il12a/Ngf/Cd4/Ntf5/Pcsk1",7
+"GO:0099056","GO:0099056","integral component of presynaptic membrane","5/514","44/28886",0.0010721820049442,0.0372718198649263,0.0345602528562373,"Slc1a7/Lpar2/Htr1b/Pcdh17/Adcy8",5
+"GO:0043195","GO:0043195","terminal bouton","7/514","90/28886",0.00113570642247698,0.0372718198649263,0.0345602528562373,"Bdnf/Ntsr1/Nmu/Blvrb/Drd4/Scgn/Adcyap1",7
