@@ -140,7 +140,7 @@ dds <- DESeqDataSetFromMatrix(countData = count_matrix,
 dds
 ```
 
-Now lets filter low count genes. We will keep all the genes which have at least 10 counts in at least 2 samples.  
+Now lets filter low count genes. We will keep all the genes which have at least 10 counts in at least 5 samples.  
 
 ```{r}
 #prefiltering
