@@ -1,0 +1,635 @@
+"","Fold","annotation","geneId","SYMBOL","GENENAME","log2FoldChange"
+"1",1.99755631801501,"Exon (ENSMUST00000121646.7/22634, exon 6 of 6)",22634,"Plagl1","pleiomorphic adenoma gene-like 1",1.79970168892014
+"2",3.22313475795171,"Intron (ENSMUST00000221025.1/12919, intron 5 of 6)",12919,"Crhbp","corticotropin releasing hormone binding protein",0.387022099088835
+"3",1.60445050124994,"Promoter (<=1kb)",227580,"C1ql3","C1q-like 3",1.51332573985566
+"4",2.01072513675607,"3' UTR",72780,"Rspo3","R-spondin 3",2.63485858558492
+"5",2.03660094579265,"Promoter (<=1kb)",56534,"Hspb3","heat shock protein 3",2.23495172690421
+"6",1.71193420762184,"3' UTR",19417,"Rasgrf1","RAS protein-specific guanine nucleotide-releasing factor 1",0.253106278542214
+"7",4.68012912242911,"Promoter (<=1kb)",331374,"Dgkk","diacylglycerol kinase kappa",3.58551654246795
+"8",1.80132503721556,"Promoter (<=1kb)",22339,"Vegfa","vascular endothelial growth factor A",1.32941092752294
+"9",-3.13296936152071,"Promoter (<=1kb)",13345,"Twist2","twist basic helix-loop-helix transcription factor 2",-1.47007116475322
+"10",1.82396760661251,"Exon (ENSMUST00000023007.6/11514, exon 18 of 18)",11514,"Adcy8","adenylate cyclase 8",2.01574011616133
+"11",2.02839884119919,"3' UTR",319909,"Ism1","isthmin 1, angiogenesis inhibitor",1.62439936332121
+"12",-1.95478685639465,"Promoter (1-2kb)",75668,"Rasl10a","RAS-like, family 10, member A",-1.78896236512837
+"13",2.42230483582783,"Promoter (2-3kb)",78088,"Sowahb","sosondowah ankyrin repeat domain family member B",2.88848841660692
+"14",3.84263051349578,"Promoter (<=1kb)",53404,"Atoh7","atonal bHLH transcription factor 7",3.59884625318744
+"15",1.70666432606552,"3' UTR",12014,"Bach2","BTB and CNC homology, basic leucine zipper transcription factor 2",1.56903591047397
+"16",1.98995754171146,"Exon (ENSMUST00000035101.8/215418, exon 5 of 5)",215418,"Csrnp1","cysteine-serine-rich nuclear protein 1",2.181677161357
+"17",2.38332291572203,"Exon (ENSMUST00000054095.5/243043, exon 2 of 2)",243043,"Kctd8","potassium channel tetramerisation domain containing 8",2.31158310336191
+"18",1.42500945354346,"3' UTR",71371,"Arid5b","AT rich interactive domain 5B (MRF1-like)",1.51117641985409
+"19",2.8179605261293,"Promoter (<=1kb)",327812,"Gm15663","predicted gene 15663",1.26190651763251
+"20",1.57335864476925,"Promoter (<=1kb)",231386,"Ythdc1","YTH domain containing 1",1.14018157688743
+"21",1.38853550694103,"Exon (ENSMUST00000169922.8/244059, exon 6 of 39)",244059,"Chd2","chromodomain helicase DNA binding protein 2",1.18500571495752
+"22",1.3099589970254,"Promoter (2-3kb)",22339,"Vegfa","vascular endothelial growth factor A",1.32941092752294
+"23",2.54268373455544,"Promoter (<=1kb)",14282,"Fosb","FBJ osteosarcoma oncogene B",3.16300772518892
+"24",2.04000839287625,"Promoter (<=1kb)",17202,"Mc4r","melanocortin 4 receptor",2.30947101534067
+"25",2.15707903728929,"Promoter (1-2kb)",619665,"Klf14","Kruppel-like factor 14",2.87863659702938
+"26",1.24587290656089,"Exon (ENSMUST00000185234.1/20254, exon 2 of 3)",20254,"Scg2","secretogranin II",1.62288683926968
+"27",7.28236008326944,"Promoter (<=1kb)",99929,"Tiparp","TCDD-inducible poly(ADP-ribose) polymerase",1.44775852690952
+"28",1.76454550775715,"3' UTR",14284,"Fosl2","fos-like antigen 2",2.75032461834406
+"29",1.25358899744718,"Promoter (2-3kb)",16548,"Khk","ketohexokinase",0.85040289810298
+"30",1.71698368384305,"Exon (ENSMUST00000071065.7/18030, exon 2 of 2)",18030,"Nfil3","nuclear factor, interleukin 3, regulated",2.35898298380827
+"31",0.93133486366543,"3' UTR",22724,"Zbtb7b","zinc finger and BTB domain containing 7B",0.983104718646327
+"32",1.05638976745966,"3' UTR",244059,"Chd2","chromodomain helicase DNA binding protein 2",1.18500571495752
+"33",2.17816416100815,"Exon (ENSMUST00000221638.1/ENSMUST00000221638.1, exon 1 of 1)",208440,"Dip2c","disco interacting protein 2 homolog C",0.508944195942396
+"34",4.3605156079004,"Intron (ENSMUST00000135431.7/241568, intron 1 of 6)",241568,"Lrrc4c","leucine rich repeat containing 4C",0.993365369660793
+"35",1.58844470365426,"Promoter (1-2kb)",19416,"Rasd1","RAS, dexamethasone-induced 1",1.8874209197833
+"36",3.34315072948773,"3' UTR",232431,"Gprc5a","G protein-coupled receptor, family C, group 5, member A",4.17295736779381
+"37",2.58333825123666,"3' UTR",18212,"Ntrk2","neurotrophic tyrosine kinase, receptor, type 2",0.614288147806793
+"38",2.0247323529888,"3' UTR",193452,"Zfp184","zinc finger protein 184 (Kruppel-like)",2.56048630640307
+"39",-1.29055728791229,"Promoter (2-3kb)",72330,"Klhl40","kelch-like 40",0.789776936539621
+"40",-21.9097428804264,"Exon (ENSMUST00000006629.13/20742, exon 11 of 36)",20742,"Sptbn1","spectrin beta, non-erythrocytic 1",0.179152742187009
+"41",3.0084445519509,"3' UTR",11992,"Auh","AU RNA binding protein/enoyl-coenzyme A hydratase",0.29381369508838
+"42",1.36818092812969,"Promoter (<=1kb)",64450,"Gpr85","G protein-coupled receptor 85",0.889555260245641
+"43",1.36566289244905,"Promoter (2-3kb)",80879,"Slc16a3","solute carrier family 16 (monocarboxylic acid transporters), member 3",1.10519659112297
+"44",2.75606135917424,"Exon (ENSMUST00000215256.1/72780, exon 2 of 4)",72780,"Rspo3","R-spondin 3",2.63485858558492
+"45",-6.6052200774034,"Promoter (<=1kb)",67412,"Soga3","SOGA family member 3",0.411886232189669
+"46",1.92887417772088,"3' UTR",19417,"Rasgrf1","RAS protein-specific guanine nucleotide-releasing factor 1",0.253106278542214
+"47",3.00816528648745,"Promoter (<=1kb)",78834,"Zfp623","zinc finger protein 623",0.542661750595696
+"48",-1.03277871516436,"3' UTR",18125,"Nos1","nitric oxide synthase 1, neuronal",-0.340737928116584
+"49",2.84194268177527,"Intron (ENSMUST00000115715.7/23984, intron 1 of 21)",23984,"Pde10a","phosphodiesterase 10A",1.04664793551648
+"50",3.93433190157692,"Intron (ENSMUST00000114961.7/545156, intron 1 of 36)",545156,"Kalrn","kalirin, RhoGEF kinase",-0.644599726160048
+"51",2.00158785524425,"Promoter (2-3kb)",16323,"Inhba","inhibin beta-A",2.04659512387663
+"52",2.83322264808511,"Promoter (<=1kb)",78088,"Sowahb","sosondowah ankyrin repeat domain family member B",2.88848841660692
+"53",1.19576360316625,"Promoter (<=1kb)",242297,"Fam110b","family with sequence similarity 110, member B",1.24295677450836
+"54",1.35837807884454,"Promoter (<=1kb)",192657,"Ell2","elongation factor for RNA polymerase II 2",1.18950144178773
+"55",1.5598735530671,"3' UTR",14282,"Fosb","FBJ osteosarcoma oncogene B",3.16300772518892
+"56",1.36886245504951,"Promoter (2-3kb)",228564,"Frmd5","FERM domain containing 5",1.41475162338876
+"57",3.65827395471764,"Distal Intergenic",386655,"Eid2","EP300 interacting inhibitor of differentiation 2",-0.232167098258001
+"58",6.93346461989153,"Promoter (<=1kb)",109135,"Plekha5","pleckstrin homology domain containing, family A member 5",0.351559652742585
+"59",-1.73205884582561,"Promoter (2-3kb)",20778,"Scarb1","scavenger receptor class B, member 1",-0.295696558228193
+"60",-1.0040872238944,"Exon (ENSMUST00000066610.7/109050, exon 2 of 2)",109050,"Inka2","inka box actin regulator 2",-1.12583715960624
+"61",-1.08416524467744,"3' UTR",50798,"Gne","glucosamine (UDP-N-acetyl)-2-epimerase/N-acetylmannosamine kinase",-0.628769472418094
+"62",-1.5055335375655,"3' UTR",59289,"Ackr2","atypical chemokine receptor 2",-1.30917346413976
+"63",-0.953749081447855,"Exon (ENSMUST00000108021.1/217057, exon 3 of 3)",217057,"Ptrh2","peptidyl-tRNA hydrolase 2",-0.308961442194062
+"64",0.735285331585966,"Exon (ENSMUST00000022638.5/18040, exon 3 of 3)",18040,"Nefm","neurofilament, medium polypeptide",0.895641181681262
+"65",1.63882769299467,"Exon (ENSMUST00000071065.7/18030, exon 2 of 2)",18030,"Nfil3","nuclear factor, interleukin 3, regulated",2.35898298380827
+"66",4.35640553513189,"Distal Intergenic",241514,"Zfp804a","zinc finger protein 804A",0.714107632944143
+"67",-1.66523289768763,"3' UTR",171281,"Acot3","acyl-CoA thioesterase 3",-1.81267477107863
+"68",4.67642595689208,"Intron (ENSMUST00000065118.6/76980, intron 1 of 1)",76980,"Ube2ql1","ubiquitin-conjugating enzyme E2Q family-like 1",0.309788606741694
+"69",1.07380196241419,"Promoter (1-2kb)",241528,"Lrrc55","leucine rich repeat containing 55",0.594689910511814
+"70",0.831284821066129,"Promoter (<=1kb)",24064,"Spry2","sprouty RTK signaling antagonist 2",0.812560572614447
+"71",-1.14335544503073,"Promoter (<=1kb)",239273,"Abcc4","ATP-binding cassette, sub-family C (CFTR/MRP), member 4",-0.523277645440254
+"72",2.23359954539624,"Promoter (<=1kb)",12918,"Crh","corticotropin releasing hormone",2.62848325636822
+"73",2.78972496316393,"Promoter (<=1kb)",14165,"Fgf10","fibroblast growth factor 10",1.12154421332163
+"74",1.51740295992722,"Promoter (<=1kb)",17155,"Man1a","mannosidase 1, alpha",1.04661605900894
+"75",-0.668618958507145,"3' UTR",70082,"Lysmd2","LysM, putative peptidoglycan-binding, domain containing 2",-0.576384096426525
+"76",2.8804112051508,"Promoter (<=1kb)",268291,"Rnf217","ring finger protein 217",1.86834292417923
+"77",1.67113098454876,"3' UTR",17691,"Sik1","salt inducible kinase 1",2.38288846387914
+"78",2.57092816372793,"Exon (ENSMUST00000047206.6/213556, exon 8 of 30)",213556,"Plekhh2","pleckstrin homology domain containing, family H (with MyTH4 domain) member 2",1.91903542440632
+"79",4.84510824840628,"Promoter (<=1kb)",99929,"Tiparp","TCDD-inducible poly(ADP-ribose) polymerase",1.44775852690952
+"80",1.03845154306329,"Promoter (2-3kb)",207911,"Mchr1","melanin-concentrating hormone receptor 1",1.10391891629948
+"81",-0.82293700643593,"3' UTR",208104,"Mlxip","MLX interacting protein",0.184032905201556
+"82",0.980321272029326,"Promoter (<=1kb)",66277,"Klf15","Kruppel-like factor 15",0.555966266084927
+"83",1.20856907847411,"Promoter (<=1kb)",12563,"Cdh6","cadherin 6",1.42754323807872
+"84",1.88881247286079,"Promoter (<=1kb)",26559,"Hunk","hormonally upregulated Neu-associated kinase",1.22685276880287
+"85",1.0181859839983,"Promoter (1-2kb)",72057,"Phf10","PHD finger protein 10",0.857269783192614
+"86",2.55267215512818,"Intron (ENSMUST00000053336.7/72190, intron 1 of 1)",72190,"2510009E07Rik","RIKEN cDNA 2510009E07 gene",0.876618398923571
+"87",0.785948234245906,"Exon (ENSMUST00000037029.6/240185, exon 3 of 4)",240185,"Jcad","junctional cadherin 5 associated",0.959445142511774
+"88",-7.21212173540088,"5' UTR",56405,"Dusp14","dual specificity phosphatase 14",0.519238112953485
+"89",0.973799413475003,"Exon (ENSMUST00000188142.6/244895, exon 4 of 4)",244895,"Peak1","pseudopodium-enriched atypical kinase 1",0.794075051437218
+"90",1.07027899756665,"5' UTR",68833,"Pdcl3","phosducin-like 3",0.724791870855532
+"91",3.01325701341468,"Intron (ENSMUST00000065224.7/14427, intron 2 of 2)",14427,"Galr1","galanin receptor 1",3.75193120853498
+"92",1.61125216808219,"Promoter (<=1kb)",327812,"Gm15663","predicted gene 15663",1.26190651763251
+"93",-1.18586716429079,"3' UTR",66101,"Ppih","peptidyl prolyl isomerase H",-0.493535016958718
+"94",1.01145985392926,"3' UTR",26559,"Hunk","hormonally upregulated Neu-associated kinase",1.22685276880287
+"95",0.942962589873609,"Exon (ENSMUST00000029441.3/54526, exon 3 of 7)",54526,"Syt10","synaptotagmin X",0.965783489543638
+"96",1.42582077318725,"Exon (ENSMUST00000209902.1/79221, exon 11 of 25)",79221,"Hdac9","histone deacetylase 9",0.949657068926402
+"97",2.29089852978364,"Exon (ENSMUST00000128453.7/327946, exon 5 of 5)",327946,"Gm12295","predicted gene 12295",2.33745610520933
+"98",1.65215434718177,"Promoter (<=1kb)",112403,"Dxo","decapping exoribonuclease",1.08747550929793
+"99",-0.959753787629109,"Exon (ENSMUST00000126626.7/210933, exon 13 of 16)",210933,"Adgrb3","adhesion G protein-coupled receptor B3",-0.62275190237681
+"100",0.912048644768566,"3' UTR",56417,"Adar","adenosine deaminase, RNA-specific",0.427695132266888
+"101",1.08206989676986,"Promoter (1-2kb)",21983,"Tpbg","trophoblast glycoprotein",1.36544385113179
+"102",0.898540754324316,"Exon (ENSMUST00000016670.8/226419, exon 3 of 3)",226419,"Dyrk3","dual-specificity tyrosine-(Y)-phosphorylation regulated kinase 3",1.06185075862059
+"103",1.0558323518972,"3' UTR",66540,"Fam107b","family with sequence similarity 107, member B",1.43379399616504
+"104",1.16773492451256,"Exon (ENSMUST00000036439.5/12563, exon 12 of 12)",12563,"Cdh6","cadherin 6",1.42754323807872
+"105",1.04260734742104,"Promoter (<=1kb)",278795,"Lrrc10b","leucine rich repeat containing 10B",1.12579123806205
+"106",-1.37304636373929,"Promoter (<=1kb)",12702,"Socs3","suppressor of cytokine signaling 3",0.536304689450014
+"107",-1.60281962546138,"Promoter (<=1kb)",212398,"Frat2","frequently rearranged in advanced T cell lymphomas 2",-1.09619227146981
+"108",1.03194012587124,"Promoter (<=1kb)",30806,"Adamts8","a disintegrin-like and metallopeptidase (reprolysin type) with thrombospondin type 1 motif, 8",0.863878150074671
+"109",1.48401680700097,"Promoter (1-2kb)",11535,"Adm","adrenomedullin",1.70525771563159
+"110",1.22961659091524,"Promoter (1-2kb)",192657,"Ell2","elongation factor for RNA polymerase II 2",1.18950144178773
+"111",0.845520135458664,"Promoter (1-2kb)",231386,"Ythdc1","YTH domain containing 1",1.14018157688743
+"112",1.04396457220417,"3' UTR",26559,"Hunk","hormonally upregulated Neu-associated kinase",1.22685276880287
+"113",-1.96787760958658,"Exon (ENSMUST00000034521.7/70989, exon 5 of 9)",70989,"Jhy","junctional cadherin complex regulator",-1.37250061369666
+"114",0.76360345766681,"Promoter (<=1kb)",216850,"Kdm6b","KDM1 lysine (K)-specific demethylase 6B",0.556241300155283
+"115",0.933419239838264,"Promoter (1-2kb)",242297,"Fam110b","family with sequence similarity 110, member B",1.24295677450836
+"116",-0.90592383011204,"3' UTR",210933,"Adgrb3","adhesion G protein-coupled receptor B3",-0.62275190237681
+"117",2.03545287672127,"Promoter (2-3kb)",212943,"Tent5a","terminal nucleotidyltransferase 5A",2.31866203094917
+"118",-0.761398258116864,"Exon (ENSMUST00000041623.8/13803, exon 2 of 3)",13803,"Enc1","ectodermal-neural cortex 1",-0.32859708563448
+"119",2.56527124562358,"Distal Intergenic",93688,"Klhl1","kelch-like 1",2.8971961902683
+"120",-0.568927347058823,"3' UTR",74315,"Rnf145","ring finger protein 145",-0.522745328965184
+"121",1.17424768932735,"3' UTR",12916,"Crem","cAMP responsive element modulator",1.38774459187787
+"122",0.636975088112449,"Exon (ENSMUST00000152652.7/244310, exon 5 of 15)",244310,"Dlgap2","DLG associated protein 2",0.236085643738966
+"123",0.826747107810159,"Promoter (<=1kb)",241568,"Lrrc4c","leucine rich repeat containing 4C",0.993365369660793
+"124",1.13407514526966,"3' UTR",329003,"Zfp516","zinc finger protein 516",0.885242793414787
+"125",0.948492446424964,"Exon (ENSMUST00000218232.1/77220, exon 3 of 3)",77220,"Tmem200a","transmembrane protein 200A",1.33809490013925
+"126",1.11293962932596,"Promoter (<=1kb)",54196,"Pabpn1","poly(A) binding protein, nuclear 1",0.420972091984773
+"127",1.22110361495287,"Promoter (<=1kb)",11595,"Acan","aggrecan",1.45369558199008
+"128",2.37371208222199,"Distal Intergenic",93688,"Klhl1","kelch-like 1",2.8971961902683
+"129",-1.01409828313953,"3' UTR",109050,"Inka2","inka box actin regulator 2",-1.12583715960624
+"130",1.94096909402582,"Exon (ENSMUST00000087965.4/58802, exon 2 of 2)",100504412,"Kcnmb4os2","potassium large conductance calcium-activated channel, subfamily M, beta member 4, opposite strand 2",0.852495146394066
+"131",0.616786330382369,"Promoter (<=1kb)",20677,"Sox4","SRY (sex determining region Y)-box 4",0.356200901293415
+"132",-0.551762836137869,"3' UTR",268297,"Scml4","Scm polycomb group protein like 4",-0.54195355131979
+"133",0.874400997811357,"Exon (ENSMUST00000095998.6/414801, exon 2 of 2)",414801,"Itprip","inositol 1,4,5-triphosphate receptor interacting protein",1.27725279987809
+"134",-0.785112288357456,"Promoter (2-3kb)",69519,"Rwdd2a","RWD domain containing 2A",-0.438554467169329
+"135",0.949151763346607,"3' UTR",58807,"Slco1c1","solute carrier organic anion transporter family, member 1c1",0.23889089436215
+"136",1.24592118171988,"Exon (ENSMUST00000023610.14/11504, exon 9 of 9)",11504,"Adamts1","a disintegrin-like and metallopeptidase (reprolysin type) with thrombospondin type 1 motif, 1",1.68646286781806
+"137",-0.701896929223877,"3' UTR",622675,"Zfp827","zinc finger protein 827",-0.709828955006806
+"138",1.3198205059095,"Exon (ENSMUST00000166315.6/75547, exon 35 of 37)",75547,"Akap13","A kinase (PRKA) anchor protein 13",1.28745947341386
+"139",0.844637636778126,"Exon (ENSMUST00000094463.4/433938, exon 1 of 2)",433938,"Mn1","meningioma 1",0.945460039847163
+"140",1.11784515013689,"3' UTR",28105,"Trim36","tripartite motif-containing 36",1.6004082489652
+"141",-0.889964204942147,"3' UTR",230959,"Ajap1","adherens junction associated protein 1",-0.593627165353445
+"142",0.608878976016106,"Promoter (<=1kb)",74533,"Gzf1","GDNF-inducible zinc finger protein 1",0.668909604535289
+"143",-1.22318888844663,"Promoter (<=1kb)",20698,"Sphk1","sphingosine kinase 1",-0.700347416518234
+"144",0.724648242565932,"Promoter (<=1kb)",380629,"Heca","hdc homolog, cell cycle regulator",0.905964411124385
+"145",2.6652542716092,"Exon (ENSMUST00000111635.2/22437, exon 2 of 3)",22437,"Xirp1","xin actin-binding repeat containing 1",2.54284097631503
+"146",1.69527131578126,"3' UTR",17133,"Maff","v-maf musculoaponeurotic fibrosarcoma oncogene family, protein F (avian)",1.96409323550252
+"147",1.3933685385946,"Exon (ENSMUST00000225810.1/ENSMUST00000225810.1, exon 2 of 2)",72807,"Zfp429","zinc finger protein 429",0.553313234044656
+"148",-0.930377035524361,"3' UTR",67393,"Cxxc5","CXXC finger 5",-0.919020101346453
+"149",-1.00786314051251,"Promoter (<=1kb)",75697,"C2cd4b","C2 calcium-dependent domain containing 4B",0.89864045342326
+"150",1.16692810577747,"Promoter (1-2kb)",11595,"Acan","aggrecan",1.45369558199008
+"151",0.893160430708654,"3' UTR",231386,"Ythdc1","YTH domain containing 1",1.14018157688743
+"152",2.49052870012862,"Promoter (<=1kb)",75769,"Plppr5","phospholipid phosphatase related 5",1.04189564512771
+"153",0.891569505141486,"3' UTR",23872,"Ets2","E26 avian leukemia oncogene 2, 3' domain",1.1728714987118
+"154",0.935710615990738,"Exon (ENSMUST00000061552.14/244895, exon 4 of 7)",244895,"Peak1","pseudopodium-enriched atypical kinase 1",0.794075051437218
+"155",1.05168611832528,"Promoter (<=1kb)",69562,"Cdk13","cyclin-dependent kinase 13",0.587799319858626
+"156",-1.23222617003176,"Promoter (<=1kb)",320522,"Bhlha9","basic helix-loop-helix family, member a9",-1.36951641048969
+"157",-2.31130216156395,"Promoter (1-2kb)",70989,"Jhy","junctional cadherin complex regulator",-1.37250061369666
+"158",-0.673667996192035,"Promoter (1-2kb)",229801,"Tram1l1","translocation associated membrane protein 1-like 1",-0.73527117288445
+"159",1.05779518886879,"3' UTR",13496,"Arid3a","AT rich interactive domain 3A (BRIGHT-like)",1.03329506573434
+"160",-0.904123631930352,"Promoter (<=1kb)",229801,"Tram1l1","translocation associated membrane protein 1-like 1",-0.73527117288445
+"161",-0.701855124592549,"3' UTR",208104,"Mlxip","MLX interacting protein",0.184032905201556
+"162",0.513554083461513,"Promoter (<=1kb)",54604,"Pcnx","pecanex homolog",0.432323491658463
+"163",2.44391018266532,"Intron (ENSMUST00000060208.10/329421, intron 8 of 34)",329421,"Myo3b","myosin IIIB",0.544130466899845
+"164",0.599957015685785,"Promoter (1-2kb)",269593,"Luzp1","leucine zipper protein 1",0.66447653205192
+"165",1.07959739293374,"Promoter (<=1kb)",14180,"Fgf9","fibroblast growth factor 9",0.807512396985163
+"166",-1.00215423760334,"Promoter (<=1kb)",27221,"Chaf1a","chromatin assembly factor 1, subunit A (p150)",-0.756621396804207
+"167",0.641209170619535,"Exon (ENSMUST00000111704.7/71323, exon 3 of 5)",71323,"Rassf8","Ras association (RalGDS/AF-6) domain family (N-terminal) member 8",0.77433547316677
+"168",0.927726526075037,"Exon (ENSMUST00000037012.2/16492, exon 2 of 2)",16492,"Kcna4","potassium voltage-gated channel, shaker-related subfamily, member 4",1.05816089792426
+"169",1.60336474198146,"Exon (ENSMUST00000022075.5/18548, exon 14 of 14)",18548,"Pcsk1","proprotein convertase subtilisin/kexin type 1",2.28764416492707
+"170",1.21053664550761,"Exon (ENSMUST00000035952.4/18049, exon 3 of 3)",18049,"Ngf","nerve growth factor",1.7672578614061
+"171",2.00598530718675,"Intron (ENSMUST00000079788.6/210719, intron 5 of 6)",210719,"Mkx","mohawk homeobox",1.17809661814042
+"172",0.71798616909836,"Promoter (2-3kb)",108073,"Grm7","glutamate receptor, metabotropic 7",-0.539851461100913
+"173",0.965469294513816,"Exon (ENSMUST00000037029.6/240185, exon 3 of 4)",240185,"Jcad","junctional cadherin 5 associated",0.959445142511774
+"174",1.1412129959942,"Intron (ENSMUST00000032500.8/381813, intron 4 of 9)",381813,"Prmt8","protein arginine N-methyltransferase 8",-0.155113989429269
+"175",0.869922159585736,"3' UTR",20856,"Stc2","stanniocalcin 2",0.884641590446076
+"176",2.52181597082044,"Distal Intergenic",12014,"Bach2","BTB and CNC homology, basic leucine zipper transcription factor 2",1.56903591047397
+"177",0.524284591356182,"3' UTR",320508,"Cachd1","cache domain containing 1",0.7902397482247
+"178",0.659712528712193,"Exon (ENSMUST00000034508.13/53376, exon 2 of 13)",53376,"Usp2","ubiquitin specific peptidase 2",0.300770445969384
+"179",0.758454879482089,"3' UTR",53625,"B3gnt2","UDP-GlcNAc:betaGal beta-1,3-N-acetylglucosaminyltransferase 2",0.85654656345741
+"180",-0.560074086595702,"Promoter (<=1kb)",74100,"Arpp21","cyclic AMP-regulated phosphoprotein, 21",0.584588910346767
+"181",0.87876985251815,"Promoter (1-2kb)",15936,"Ier2","immediate early response 2",1.01971117852747
+"182",1.26643423963982,"Exon (ENSMUST00000201548.1/ENSMUST00000201548.1, exon 2 of 2)",231293,"Cwh43","cell wall biogenesis 43 C-terminal homolog",0.412937982055934
+"183",-1.14908153845876,"Promoter (<=1kb)",105242621,"Gm6117","predicted gene 6117",-0.776452331673267
+"184",-1.5889204548049,"Distal Intergenic",19414,"Rasa3","RAS p21 protein activator 3",-0.735390600880491
+"185",-1.01550520070329,"3' UTR",76467,"Msrb2","methionine sulfoxide reductase B2",-0.440778891352442
+"186",-0.493908270642698,"3' UTR",21844,"Tiam1","T cell lymphoma invasion and metastasis 1",-0.336662770404615
+"187",0.727108224016148,"Promoter (<=1kb)",329003,"Zfp516","zinc finger protein 516",0.885242793414787
+"188",-0.776623495509222,"3' UTR",17222,"Anapc1","anaphase promoting complex subunit 1",-0.282584303007605
+"189",2.31968917853354,"Promoter (<=1kb)",71908,"Cldn23","claudin 23",1.25440590169054
+"190",-0.683984034508136,"Promoter (1-2kb)",12288,"Cacna1c","calcium channel, voltage-dependent, L type, alpha 1C subunit",-0.337783149063141
+"191",0.41226665876632,"3' UTR",238871,"Pde4d","phosphodiesterase 4D, cAMP specific",0.633894813050315
+"192",1.21943192642199,"Intron (ENSMUST00000206880.1/195646, intron 2 of 2)",195646,"Hs3st2","heparan sulfate (glucosamine) 3-O-sulfotransferase 2",0.597630570598785
+"193",0.735232047428878,"Exon (ENSMUST00000108775.1/244668, exon 7 of 21)",244668,"Sipa1l2","signal-induced proliferation-associated 1 like 2",0.903926470686591
+"194",0.64285001633564,"Exon (ENSMUST00000093299.12/114716, exon 7 of 7)",114716,"Spred2","sprouty-related EVH1 domain containing 2",0.765041274922351
+"195",-0.632124540684727,"Promoter (<=1kb)",229715,"Amigo1","adhesion molecule with Ig like domain 1",-0.581467169637758
+"196",-0.583048817202746,"3' UTR",17330,"Minpp1","multiple inositol polyphosphate histidine phosphatase 1",-0.392200377650921
+"197",1.04454828233668,"Exon (ENSMUST00000166315.6/75547, exon 36 of 37)",75547,"Akap13","A kinase (PRKA) anchor protein 13",1.28745947341386
+"198",1.11022718078658,"Promoter (2-3kb)",68077,"Nop53","NOP53 ribosome biogenesis factor",1.1819664869209
+"199",1.35579038143282,"Promoter (<=1kb)",19248,"Ptpn12","protein tyrosine phosphatase, non-receptor type 12",0.766022731835928
+"200",-0.841130994985584,"Promoter (<=1kb)",68979,"Nol11","nucleolar protein 11",-0.287466152555857
+"201",-0.648543197843501,"3' UTR",109241,"Mbd5","methyl-CpG binding domain protein 5",-0.420133858950721
+"202",1.11284308844155,"Promoter (<=1kb)",620592,"Nalf2","NALCN channel auxiliary factor 2",0.528313121293442
+"203",-0.660735330868569,"3' UTR",270190,"Ephb1","Eph receptor B1",-0.406365760858366
+"204",-0.627201379674325,"3' UTR",13803,"Enc1","ectodermal-neural cortex 1",-0.32859708563448
+"205",-0.942446897504614,"3' UTR",54387,"Mcm3ap","minichromosome maintenance complex component 3 associated protein",-0.277695048563262
+"206",-0.558291061966664,"3' UTR",243853,"Fkrp","fukutin related protein",-0.514409865357941
+"207",-1.23136659496423,"Promoter (2-3kb)",100043757,"Zfp831","zinc finger protein 831",-1.50652559350898
+"208",1.02856807594565,"Distal Intergenic",75409,"Slitrk5","SLIT and NTRK-like family, member 5",0.429808771627433
+"209",-1.65832662046748,"Distal Intergenic",14472,"Gbx2","gastrulation brain homeobox 2",-1.02731313915451
+"210",-1.47423230097633,"Promoter (<=1kb)",240239,"Gpr151","G protein-coupled receptor 151",-0.780546920103949
+"211",0.722974028390524,"3' UTR",12023,"Barx2","BarH-like homeobox 2",1.25237511504392
+"212",1.20398175935368,"Exon (ENSMUST00000036328.8/239102, exon 9 of 10)",239102,"Zfhx2","zinc finger homeobox 2",0.905547388618814
+"213",-0.58865679038987,"Promoter (<=1kb)",54343,"Atf7ip","activating transcription factor 7 interacting protein",-0.750931578687955
+"214",0.769754418571922,"Promoter (2-3kb)",55947,"Dclre1a","DNA cross-link repair 1A",0.893864384046967
+"215",-0.599884638746304,"3' UTR",226744,"Cnst","consortin, connexin sorting protein",-0.282872637137202
+"216",0.752378305695755,"Exon (ENSMUST00000181067.1/ENSMUST00000181067.1, exon 2 of 3)",20983,"Syt4","synaptotagmin IV",1.48766773345599
+"217",-0.500456822836808,"Promoter (1-2kb)",83410,"Cstf2t","cleavage stimulation factor, 3' pre-RNA subunit 2, tau",-0.349118484121325
+"218",1.0461886273723,"Promoter (<=1kb)",19275,"Ptprn","protein tyrosine phosphatase, receptor type, N",0.241226719232534
+"219",-0.744645371015576,"3' UTR",59031,"Chst12","carbohydrate sulfotransferase 12",-0.959508955336557
+"220",-0.566855624845288,"Promoter (1-2kb)",84036,"Kcnn1","potassium intermediate/small conductance calcium-activated channel, subfamily N, member 1",-0.392233297310931
+"221",0.462025811977608,"Promoter (2-3kb)",320661,"D5Ertd579e","DNA segment, Chr 5, ERATO Doi 579, expressed",0.540535354088174
+"222",0.644585020018131,"3' UTR",216881,"Wscd1","WSC domain containing 1",1.1070581306666
+"223",-0.969254139029143,"Promoter (<=1kb)",54343,"Atf7ip","activating transcription factor 7 interacting protein",-0.750931578687955
+"224",-0.894306159587387,"Exon (ENSMUST00000211663.1/434003, exon 5 of 5)",434003,"Gm13848","predicted gene 13848",-0.494491467268382
+"225",-1.25674238202585,"3' UTR",16518,"Kcnj2","potassium inwardly-rectifying channel, subfamily J, member 2",-1.19379514410157
+"226",0.7387190502342,"Promoter (1-2kb)",407823,"Baz2b","bromodomain adjacent to zinc finger domain, 2B",1.0525686709963
+"227",-0.942355592230791,"Promoter (1-2kb)",328232,"Gfod1","glucose-fructose oxidoreductase domain containing 1",0.322482915144325
+"228",0.655506458212868,"Promoter (<=1kb)",55947,"Dclre1a","DNA cross-link repair 1A",0.893864384046967
+"229",-0.824130367636599,"3' UTR",13844,"Ephb2","Eph receptor B2",-0.744523445686277
+"230",0.640621615324395,"3' UTR",215378,"Brinp3","bone morphogenetic protein/retinoic acid inducible neural specific 3",1.03649892346799
+"231",0.585089305112206,"Promoter (1-2kb)",108954,"Ppp1r15b","protein phosphatase 1, regulatory subunit 15B",0.722443484566205
+"232",0.604846168219159,"Exon (ENSMUST00000022709.5/24064, exon 2 of 2)",24064,"Spry2","sprouty RTK signaling antagonist 2",0.812560572614447
+"233",-1.34088669432805,"Distal Intergenic",12702,"Socs3","suppressor of cytokine signaling 3",0.536304689450014
+"234",1.41227536897413,"Exon (ENSMUST00000114132.7/73884, exon 7 of 7)",73884,"Zdbf2","zinc finger, DBF-type containing 2",1.90068814803143
+"235",-0.672242876585597,"3' UTR",223433,"Otulinl","OTU deubiquitinase with linear linkage specificity like",-0.692481625640877
+"236",1.15488197570439,"3' UTR",13885,"Esd","esterase D/formylglutathione hydrolase",0.207398579392238
+"237",1.6220206083481,"3' UTR",78088,"Sowahb","sosondowah ankyrin repeat domain family member B",2.88848841660692
+"238",0.528854839637696,"Promoter (<=1kb)",233490,"Crebzf","CREB/ATF bZIP transcription factor",0.447988393058042
+"239",1.30692146734414,"Exon (ENSMUST00000114132.7/73884, exon 7 of 7)",73884,"Zdbf2","zinc finger, DBF-type containing 2",1.90068814803143
+"240",1.09808668279301,"Promoter (<=1kb)",75547,"Akap13","A kinase (PRKA) anchor protein 13",1.28745947341386
+"241",0.686316451015652,"Exon (ENSMUST00000061260.7/329628, exon 17 of 17)",329628,"Fat4","FAT atypical cadherin 4",0.995447675693374
+"242",-0.568242775643575,"3' UTR",72535,"Aldh1b1","aldehyde dehydrogenase 1 family, member B1",-0.656053345726241
+"243",0.581647046272755,"Promoter (2-3kb)",382571,"Kcnf1","potassium voltage-gated channel, subfamily F, member 1",0.818870521552546
+"244",0.729383990856737,"Exon (ENSMUST00000075220.13/12593, exon 5 of 10)",12593,"Cdyl","chromodomain protein, Y chromosome-like",1.01866398095093
+"245",0.96360487559075,"Exon (ENSMUST00000053317.11/12064, exon 2 of 2)",12064,"Bdnf","brain derived neurotrophic factor",1.7346535774176
+"246",0.966592536022963,"Promoter (<=1kb)",15511,"Hspa1b","heat shock protein 1B",0.932754543420924
+"247",0.988423813440414,"Promoter (<=1kb)",17196,"Mbp","myelin basic protein",0.369762338347294
+"248",0.631315982344959,"5' UTR",74901,"Kbtbd11","kelch repeat and BTB (POZ) domain containing 11",0.654476726505786
+"249",0.534214009093049,"Promoter (<=1kb)",75409,"Slitrk5","SLIT and NTRK-like family, member 5",0.429808771627433
+"250",0.745105302264565,"3' UTR",69534,"Avpi1","arginine vasopressin-induced 1",0.926649058794719
+"251",1.00308337833743,"Exon (ENSMUST00000146758.7/68842, exon 2 of 2)",68842,"Tulp4","tubby like protein 4",0.855844342940781
+"252",0.669279499398062,"Promoter (<=1kb)",18526,"Pcdh10","protocadherin 10",0.884391524076554
+"253",0.938543610006316,"Promoter (<=1kb)",240185,"Jcad","junctional cadherin 5 associated",0.959445142511774
+"254",-0.844066649445296,"3' UTR",194401,"Mical3","microtubule associated monooxygenase, calponin and LIM domain containing 3",-0.44643535113078
+"255",0.684141999306443,"3' UTR",117600,"Srgap1","SLIT-ROBO Rho GTPase activating protein 1",0.760920546835458
+"256",0.94091153131848,"3' UTR",14011,"Etv6","ets variant 6",0.641983139805444
+"257",0.706126983556537,"Promoter (<=1kb)",243937,"Zfp536","zinc finger protein 536",0.588640447261841
+"258",0.984970489550936,"Exon (ENSMUST00000061260.7/329628, exon 9 of 17)",329628,"Fat4","FAT atypical cadherin 4",0.995447675693374
+"259",-0.678603821048126,"Exon (ENSMUST00000039413.14/18577, exon 15 of 15)",18577,"Pde4a","phosphodiesterase 4A, cAMP specific",-0.348283663985998
+"260",0.96166546723007,"3' UTR",16600,"Klf4","Kruppel-like factor 4 (gut)",0.953235843604593
+"261",0.637402683891698,"Exon (ENSMUST00000206763.2/243937, exon 3 of 4)",243937,"Zfp536","zinc finger protein 536",0.588640447261841
+"262",-0.799516136666521,"3' UTR",18386,"Oprd1","opioid receptor, delta 1",-0.863137935901933
+"263",1.04082107051685,"3' UTR",27416,"Abcc5","ATP-binding cassette, sub-family C (CFTR/MRP), member 5",0.364266776959486
+"264",1.23028544629032,"Promoter (<=1kb)",26408,"Map3k5","mitogen-activated protein kinase kinase kinase 5",0.512774255841178
+"265",0.8560868893425,"Promoter (2-3kb)",244059,"Chd2","chromodomain helicase DNA binding protein 2",1.18500571495752
+"266",0.728932801417839,"Exon (ENSMUST00000037029.6/240185, exon 3 of 4)",240185,"Jcad","junctional cadherin 5 associated",0.959445142511774
+"267",-1.36929007823458,"Exon (ENSMUST00000125763.2/240476, exon 2 of 9)",240476,"Zfp407","zinc finger protein 407",-0.794901320387802
+"268",0.595585630557344,"Promoter (<=1kb)",30785,"Cttnbp2","cortactin binding protein 2",0.559791698873138
+"269",0.703734127888197,"Promoter (<=1kb)",11569,"Aebp2","AE binding protein 2",0.691688876464575
+"270",1.14329350787773,"Promoter (<=1kb)",22724,"Zbtb7b","zinc finger and BTB domain containing 7B",0.983104718646327
+"271",-0.618678780491568,"3' UTR",16510,"Kcnh1","potassium voltage-gated channel, subfamily H (eag-related), member 1",-0.46063017782521
+"272",0.567094362584073,"3' UTR",52065,"Mfhas1","malignant fibrous histiocytoma amplified sequence 1",0.629326876422916
+"273",-0.675406918379271,"Exon (ENSMUST00000109430.1/237716, exon 2 of 2)",65257,"Asb3","ankyrin repeat and SOCS box-containing 3",-0.510487893892073
+"274",1.87602556821111,"Intron (ENSMUST00000162853.7/319468, intron 1 of 5)",319468,"Ppm1h","protein phosphatase 1H (PP2C domain containing)",-0.296707864223042
+"275",0.735630135655251,"3' UTR",244059,"Chd2","chromodomain helicase DNA binding protein 2",1.18500571495752
+"276",1.64715964857013,"Exon (ENSMUST00000111635.2/22437, exon 2 of 3)",22437,"Xirp1","xin actin-binding repeat containing 1",2.54284097631503
+"277",-0.952453968663173,"Promoter (1-2kb)",74629,"4930426L09Rik","RIKEN cDNA 4930426L09 gene",-0.873099374550892
+"278",0.482401724525343,"Promoter (1-2kb)",192231,"Hexim1","hexamethylene bis-acetamide inducible 1",0.523183732016935
+"279",0.808431862385294,"Promoter (<=1kb)",76895,"Bicd2","BICD cargo adaptor 2",0.356314772327558
+"280",0.867633189246047,"Promoter (<=1kb)",20874,"Slk","STE20-like kinase",0.80985059402092
+"281",0.806422330291703,"3' UTR",68603,"Pmvk","phosphomevalonate kinase",0.562213296821679
+"282",-0.552872908570139,"3' UTR",13048,"Cux2","cut-like homeobox 2",-0.293413917684047
+"283",0.68293817691044,"3' UTR",19734,"Rgs16","regulator of G-protein signaling 16",1.24600779997352
+"284",-0.541124693814048,"Promoter (<=1kb)",75599,"Pcdh1","protocadherin 1",-0.359481249842631
+"285",-0.618865988719967,"Promoter (2-3kb)",66406,"Sac3d1","SAC3 domain containing 1",-0.588813082862891
+"286",0.830862229028401,"3' UTR",15465,"Hrh1","histamine receptor H1",1.00271538525948
+"287",-0.577849339403766,"Promoter (<=1kb)",72093,"2010320M18Rik","RIKEN cDNA 2010320M18 gene",-0.308507258601352
+"288",-1.21772854890324,"3' UTR",214063,"Dnajc16","DnaJ heat shock protein family (Hsp40) member C16",-0.43106659909536
+"289",2.35321960829902,"Intron (ENSMUST00000225488.1/18212, intron 16 of 17)",18212,"Ntrk2","neurotrophic tyrosine kinase, receptor, type 2",0.614288147806793
+"290",-0.727182260110948,"3' UTR",24063,"Spry1","sprouty RTK signaling antagonist 1",-0.727769039250891
+"291",1.90989869210592,"Intron (ENSMUST00000112810.7/227835, intron 7 of 10)",227835,"Gtdc1","glycosyltransferase-like domain containing 1",0.649282459885705
+"292",-1.19445236243032,"Promoter (<=1kb)",15565,"Htr6","5-hydroxytryptamine (serotonin) receptor 6",-0.774608315974073
+"293",0.598336053485853,"Promoter (<=1kb)",72726,"Tbcc","tubulin-specific chaperone C",0.879483780670351
+"294",0.62353289015813,"Exon (ENSMUST00000093852.4/235320, exon 2 of 7)",235320,"Zbtb16","zinc finger and BTB domain containing 16",0.707767558081208
+"295",-1.20757660399894,"Promoter (<=1kb)",20698,"Sphk1","sphingosine kinase 1",-0.700347416518234
+"296",-1.11638742888057,"Promoter (<=1kb)",71923,"Borcs6","BLOC-1 related complex subunit 6",0.393900691592557
+"297",1.10450705245399,"Exon (ENSMUST00000173206.7/329727, exon 2 of 18)",329727,"Dennd2c","DENN/MADD domain containing 2C",1.43322173304777
+"298",0.761118793803144,"Promoter (1-2kb)",20666,"Sox11","SRY (sex determining region Y)-box 11",0.801109739161179
+"299",0.654373513596168,"Exon (ENSMUST00000147663.7/243499, exon 2 of 3)",243499,"Lrrtm4","leucine rich repeat transmembrane neuronal 4",0.929233227164449
+"300",-0.821879817364677,"3' UTR",58227,"Fam184b","family with sequence similarity 184, member B",-0.937672114971011
+"301",0.701895050992052,"Exon (ENSMUST00000124226.2/100503043, exon 6 of 6)",100503043,"Armcx4","armadillo repeat containing, X-linked 4",0.928593316130056
+"302",0.82296149962953,"Exon (ENSMUST00000126865.7/70661, exon 21 of 25)",70661,"Sik3","SIK family kinase 3",0.837537186494975
+"303",0.696587262560469,"Exon (ENSMUST00000013220.7/75723, exon 3 of 13)",75723,"Amotl1","angiomotin-like 1",0.478884408772929
+"304",0.524144579625577,"Promoter (2-3kb)",27223,"Trp53bp1","transformation related protein 53 binding protein 1",0.384574436722391
+"305",1.37167163215539,"Exon (ENSMUST00000228796.1/380930, exon 3 of 3)",380930,"9330188P03Rik","RIKEN cDNA 9330188P03 gene",1.06929269737414
+"306",0.76861295533925,"Promoter (1-2kb)",329628,"Fat4","FAT atypical cadherin 4",0.995447675693374
+"307",0.989276482115156,"Intron (ENSMUST00000107749.3/242425, intron 13 of 18)",242425,"Gabbr2","gamma-aminobutyric acid (GABA) B receptor, 2",-0.235034934361203
+"308",1.15640609751498,"Promoter (<=1kb)",17131,"Smad7","SMAD family member 7",0.463017759188722
+"309",0.52093707305925,"3' UTR",74342,"Lrrtm1","leucine rich repeat transmembrane neuronal 1",0.991043738070819
+"310",0.696346519381409,"Promoter (<=1kb)",192198,"Lrrc4","leucine rich repeat containing 4",0.688203691783625
+"311",-0.571428963145402,"Exon (ENSMUST00000060722.7/67393, exon 2 of 3)",67393,"Cxxc5","CXXC finger 5",-0.919020101346453
+"312",0.76799291949656,"Promoter (<=1kb)",11838,"Arc","activity regulated cytoskeletal-associated protein",0.92080977602136
+"313",1.75256849087548,"Intron (ENSMUST00000115715.7/23984, intron 1 of 21)",23984,"Pde10a","phosphodiesterase 10A",1.04664793551648
+"314",1.68104537713403,"Promoter (<=1kb)",100294583,"Alkal2","ALK and LTK ligand 2",2.16473742808635
+"315",0.937005901464885,"3' UTR",320376,"Bcorl1","BCL6 co-repressor-like 1",0.80133267682671
+"316",-0.700489318799819,"Promoter (1-2kb)",74256,"Cyld","CYLD lysine 63 deubiquitinase",-0.67199673304683
+"317",-0.502802847809859,"Promoter (2-3kb)",320563,"Islr2","immunoglobulin superfamily containing leucine-rich repeat 2",-0.521484088293864
+"318",-0.587864364593193,"3' UTR",17309,"Mgat3","mannoside acetylglucosaminyltransferase 3",-0.355310754802165
+"319",0.503435722685628,"Exon (ENSMUST00000046521.13/77578, exon 10 of 10)",77578,"Bcl9","B cell CLL/lymphoma 9",0.656170350934801
+"320",0.517083458787991,"Exon (ENSMUST00000053239.3/20607, exon 3 of 3)",20607,"Sstr3","somatostatin receptor 3",0.508366365911742
+"321",1.54395937363294,"Promoter (<=1kb)",192657,"Ell2","elongation factor for RNA polymerase II 2",1.18950144178773
+"322",-0.822857534512475,"3' UTR",218763,"Lrrc3b","leucine rich repeat containing 3B",-0.738540403197194
+"323",1.64123312970211,"Intron (ENSMUST00000197148.1/ENSMUST00000197148.1, intron 1 of 1)",16007,"Ccn1","cellular communication network factor 1",0.561634129113382
+"324",-0.460400976077481,"3' UTR",72170,"Chchd4","coiled-coil-helix-coiled-coil-helix domain containing 4",-0.430853142709638
+"325",-0.442725296229657,"Promoter (1-2kb)",269642,"Nat8l","N-acetyltransferase 8-like",-0.222419943136616
+"326",0.820852168348789,"Promoter (1-2kb)",15511,"Hspa1b","heat shock protein 1B",0.932754543420924
+"327",1.61609323282069,"Distal Intergenic",11922,"Neurod6","neurogenic differentiation 6",0.965874297296961
+"328",0.881741441708435,"Exon (ENSMUST00000107433.7/22724, exon 2 of 3)",22724,"Zbtb7b","zinc finger and BTB domain containing 7B",0.983104718646327
+"329",1.94837707586657,"3' UTR",14427,"Galr1","galanin receptor 1",3.75193120853498
+"330",0.63018697006741,"Exon (ENSMUST00000019791.13/20358, exon 19 of 19)",20358,"Sema6a","sema domain, transmembrane domain (TM), and cytoplasmic domain, (semaphorin) 6A",0.945901906191097
+"331",-0.983148445451435,"3' UTR",545156,"Kalrn","kalirin, RhoGEF kinase",-0.644599726160048
+"332",-0.523260574273094,"Exon (ENSMUST00000000881.12/14025, exon 4 of 5)",14025,"Bcl11a","B cell CLL/lymphoma 11A (zinc finger protein)",-0.597008837089202
+"333",0.702158211067967,"Promoter (<=1kb)",56631,"Trim17","tripartite motif-containing 17",0.244755306260116
+"334",-0.80461869927475,"3' UTR",13048,"Cux2","cut-like homeobox 2",-0.293413917684047
+"335",0.611337499446277,"Promoter (1-2kb)",219228,"Pcdh17","protocadherin 17",1.20656085364286
+"336",1.07943495817359,"Distal Intergenic",225010,"Lclat1","lysocardiolipin acyltransferase 1",-0.353900939428836
+"337",-0.811394383968652,"Promoter (<=1kb)",67177,"Cdt1","chromatin licensing and DNA replication factor 1",-0.387727383408793
+"338",-0.559565293262303,"Promoter (2-3kb)",21429,"Ubtf","upstream binding transcription factor, RNA polymerase I",-0.733063795505627
+"339",-1.25866343031855,"Distal Intergenic",107448,"Unc5a","unc-5 netrin receptor A",-0.552411226335875
+"340",-1.09080912909675,"3' UTR",103511,"Calhm5","calcium homeostasis modulator family member 5",-0.864286317237693
+"341",0.752076273126431,"Promoter (2-3kb)",384309,"Trim56","tripartite motif-containing 56",0.407453439268662
+"342",1.02960998915996,"Promoter (<=1kb)",64339,"Fndc4","fibronectin type III domain containing 4",0.533439621759462
+"343",0.583830677245756,"Promoter (1-2kb)",278097,"Armcx6","armadillo repeat containing, X-linked 6",0.593207113563542
+"344",0.521275528086468,"3' UTR",213053,"Slc39a14","solute carrier family 39 (zinc transporter), member 14",0.44629315223585
+"345",0.943504250011154,"Promoter (1-2kb)",71004,"4931440P22Rik","RIKEN cDNA 4931440P22 gene",4.98758363961973
+"346",0.683208468640141,"Promoter (<=1kb)",20874,"Slk","STE20-like kinase",0.80985059402092
+"347",-0.628120152895999,"3' UTR",276919,"Gemin4","gem nuclear organelle associated protein 4",-0.327567789357963
+"348",1.15900374606349,"Promoter (2-3kb)",13654,"Egr2","early growth response 2",1.47473265668977
+"349",-0.572729822484283,"Exon (ENSMUST00000065797.6/76969, exon 3 of 3)",76969,"Chst1","carbohydrate sulfotransferase 1",-0.307469551259183
+"350",0.520539801496205,"Promoter (<=1kb)",16478,"Jund","jun D proto-oncogene",0.895552965176487
+"351",0.545488580113086,"Promoter (<=1kb)",244668,"Sipa1l2","signal-induced proliferation-associated 1 like 2",0.903926470686591
+"352",-1.06633957594239,"3' UTR",20447,"St6galnac3","ST6 (alpha-N-acetyl-neuraminyl-2,3-beta-galactosyl-1,3)-N-acetylgalactosaminide alpha-2,6-sialyltransferase 3",-1.17635723344775
+"353",-1.12344348222867,"Distal Intergenic",50868,"Keap1","kelch-like ECH-associated protein 1",-0.446030237803238
+"354",0.68750335116707,"Exon (ENSMUST00000017384.13/192160, exon 8 of 15)",192160,"Casc3","cancer susceptibility candidate 3",0.583717573626315
+"355",-0.701232796229974,"3' UTR",103765,"Tmem17","transmembrane protein 17",-0.608038769457778
+"356",-0.843982165966562,"3' UTR",213332,"Mfsd4b4","major facilitator superfamily domain containing 4B4",-0.530360769074806
+"357",0.678100514426308,"Exon (ENSMUST00000026703.5/12013, exon 5 of 5)",12013,"Bach1","BTB and CNC homology 1, basic leucine zipper transcription factor 1",0.802037142129462
+"358",-0.595765701571573,"3' UTR",58246,"Slc35b4","solute carrier family 35, member B4",-0.406515151078499
+"359",-0.417249411773384,"Promoter (2-3kb)",239157,"Pnma2","paraneoplastic antigen MA2",-0.42123123133833
+"360",0.74273104564206,"Promoter (<=1kb)",329003,"Zfp516","zinc finger protein 516",0.885242793414787
+"361",0.767265435409571,"Exon (ENSMUST00000061552.14/244895, exon 4 of 7)",244895,"Peak1","pseudopodium-enriched atypical kinase 1",0.794075051437218
+"362",1.44162227856413,"Distal Intergenic",260409,"Cdc42ep3","CDC42 effector protein (Rho GTPase binding) 3",0.818222609321262
+"363",-0.486559044135167,"Exon (ENSMUST00000189694.1/241289, exon 3 of 3)",241289,"Ppp1r26","protein phosphatase 1, regulatory subunit 26",-0.636997946112805
+"364",-0.3770617323263,"Promoter (2-3kb)",67943,"Mesd","mesoderm development LRP chaperone",-0.208248911192218
+"365",-0.478937343093033,"Promoter (1-2kb)",320563,"Islr2","immunoglobulin superfamily containing leucine-rich repeat 2",-0.521484088293864
+"366",0.444540118693766,"3' UTR",14432,"Gap43","growth associated protein 43",0.2789015848313
+"367",0.651706338530376,"Promoter (1-2kb)",26397,"Map2k3","mitogen-activated protein kinase kinase 3",0.920383835777771
+"368",1.33044999934874,"Intron (ENSMUST00000033965.13/23965, intron 23 of 28)",23965,"Tenm3","teneurin transmembrane protein 3",0.264855748732964
+"369",0.71875682208762,"Exon (ENSMUST00000049452.14/81907, exon 3 of 5)",81907,"Tmem108","transmembrane protein 108",0.53280471341749
+"370",0.837926640329581,"Promoter (1-2kb)",112406,"Egln2","egl-9 family hypoxia-inducible factor 2",0.323996415943604
+"371",-0.529924104257232,"3' UTR",50798,"Gne","glucosamine (UDP-N-acetyl)-2-epimerase/N-acetylmannosamine kinase",-0.628769472418094
+"372",-0.619883622497492,"Exon (ENSMUST00000055518.12/18708, exon 13 of 16)",18708,"Pik3r1","phosphoinositide-3-kinase regulatory subunit 1",-0.529596194400005
+"373",0.598759223414523,"3' UTR",74019,"Traf3ip1","TRAF3 interacting protein 1",0.188327726312773
+"374",-0.754870827896496,"3' UTR",19015,"Ppard","peroxisome proliferator activator receptor delta",0.553516813622112
+"375",-1.12640969070567,"Promoter (<=1kb)",22390,"Wee1","WEE 1 homolog 1 (S. pombe)",-0.999990930834088
+"376",-0.662316545026458,"Promoter (<=1kb)",20807,"Srf","serum response factor",-0.596053185057516
+"377",0.65701833027485,"Exon (ENSMUST00000179361.1/ENSMUST00000179361.1, exon 1 of 1)",76453,"Prss23","protease, serine 23",0.934128524467732
+"378",0.792762766101788,"Promoter (1-2kb)",329628,"Fat4","FAT atypical cadherin 4",0.995447675693374
+"379",1.16344913817342,"Intron (ENSMUST00000128453.7/327946, intron 3 of 4)",327946,"Gm12295","predicted gene 12295",2.33745610520933
+"380",0.598561465821953,"Exon (ENSMUST00000067065.13/234214, exon 18 of 26)",234214,"Sorbs2","sorbin and SH3 domain containing 2",0.515469971664889
+"381",1.29280006131009,"Distal Intergenic",24004,"Rai2","retinoic acid induced 2",0.483512914520234
+"382",0.696254334953272,"Exon (ENSMUST00000098596.10/233060, exon 5 of 5)",233060,"Zfp382","zinc finger protein 382",0.865359070604545
+"383",-0.8229272450791,"3' UTR",100038347,"Fam174b","family with sequence similarity 174, member B",-0.263866389870641
+"384",-0.632661344062186,"Exon (ENSMUST00000105646.2/230959, exon 2 of 6)",230959,"Ajap1","adherens junction associated protein 1",-0.593627165353445
+"385",0.699246792191458,"Promoter (1-2kb)",192657,"Ell2","elongation factor for RNA polymerase II 2",1.18950144178773
+"386",-0.741356093456342,"Promoter (2-3kb)",230577,"Pars2","prolyl-tRNA synthetase (mitochondrial)(putative)",-0.65380712069649
+"387",-0.495111871266406,"Promoter (1-2kb)",81910,"Rrbp1","ribosome binding protein 1",-0.25452252115123
+"388",0.635517588781489,"Exon (ENSMUST00000147285.1/74438, exon 2 of 2)",74438,"Clvs1","clavesin 1",0.511982550570818
+"389",-0.447969009387268,"Exon (ENSMUST00000111879.4/245038, exon 2 of 5)",245038,"Dclk3","doublecortin-like kinase 3",-0.700231078864317
+"390",-1.02964579658808,"3' UTR",243499,"Lrrtm4","leucine rich repeat transmembrane neuronal 4",0.929233227164449
+"391",0.817385581898448,"Promoter (1-2kb)",219257,"Pcdh20","protocadherin 20",1.31439829472546
+"392",-0.731794454973144,"Promoter (2-3kb)",24063,"Spry1","sprouty RTK signaling antagonist 1",-0.727769039250891
+"393",0.760335597448512,"5' UTR",260409,"Cdc42ep3","CDC42 effector protein (Rho GTPase binding) 3",0.818222609321262
+"394",0.611567485876212,"Promoter (<=1kb)",545389,"Cep170","centrosomal protein 170",0.729016767443141
+"395",0.670000641195647,"Promoter (<=1kb)",67293,"3110039M20Rik","RIKEN cDNA 3110039M20 gene",0.664507085970232
+"396",-0.49246287667063,"3' UTR",213121,"Ankrd35","ankyrin repeat domain 35",-0.60757054608677
+"397",0.349063689220115,"Promoter (<=1kb)",17246,"Mdm2","transformed mouse 3T3 cell double minute 2",0.551472502167324
+"398",-0.881826729852112,"Promoter (<=1kb)",231712,"Trafd1","TRAF type zinc finger domain containing 1",0.233753765181001
+"399",0.545944339699115,"Promoter (2-3kb)",55942,"Sertad1","SERTA domain containing 1",0.644506058857463
+"400",-0.641008621446369,"3' UTR",442801,"Arhgef15","Rho guanine nucleotide exchange factor (GEF) 15",-0.732237147667336
+"401",0.416657073152971,"3' UTR",380928,"Lmo7","LIM domain only 7",0.622212474981745
+"402",0.597472907880413,"3' UTR",15465,"Hrh1","histamine receptor H1",1.00271538525948
+"403",-0.911373252251869,"3' UTR",231042,"Nupl2","nucleoporin like 2",-0.59237053299914
+"404",-1.13014422268841,"Promoter (<=1kb)",110308,"Krt5","keratin 5",-1.36356659221509
+"405",0.682023826690419,"Exon (ENSMUST00000087517.9/23856, exon 6 of 16)",23856,"Dido1","death inducer-obliterator 1",-0.217917630036259
+"406",1.22595035373845,"Promoter (<=1kb)",240690,"St18","suppression of tumorigenicity 18",2.30405764888316
+"407",-0.620331480265568,"3' UTR",69601,"Dab2ip","disabled 2 interacting protein",-0.266178029546058
+"408",-0.729290224501806,"Promoter (1-2kb)",102414,"Clk3","CDC-like kinase 3",0.443498394208535
+"409",-0.495009033716218,"3' UTR",74111,"Rbm19","RNA binding motif protein 19",-0.580543295980927
+"410",-0.504666277027487,"Exon (ENSMUST00000027867.6/74895, exon 4 of 6)",74895,"Ccdc181","coiled-coil domain containing 181",-0.389609546794213
+"411",-1.69301732169141,"Exon (ENSMUST00000203328.2/50918, exon 3 of 3)",50918,"Myadm","myeloid-associated differentiation marker",-0.295993518320766
+"412",0.470464232346094,"Exon (ENSMUST00000036877.9/209773, exon 2 of 19)",209773,"Dennd2a","DENN/MADD domain containing 2A",0.477589371713601
+"413",0.91944058817719,"Promoter (<=1kb)",241525,"Ypel4","yippee like 4",0.930390677867109
+"414",1.11228951541728,"Distal Intergenic",18049,"Ngf","nerve growth factor",1.7672578614061
+"415",0.645395600111323,"Promoter (<=1kb)",75209,"Sv2c","synaptic vesicle glycoprotein 2c",0.772621475187753
+"416",0.665786530592824,"3' UTR",17171,"Mas1","MAS1 oncogene",1.65279272875337
+"417",-0.99434651893807,"3' UTR",68304,"Poglut3","protein O-glucosyltransferase 3",-0.44309352139521
+"418",0.310627214588242,"Exon (ENSMUST00000182149.7/226562, exon 12 of 35)",226562,"Prrc2c","proline-rich coiled-coil 2C",0.41713216435205
+"419",0.465277907456612,"3' UTR",66522,"Pgpep1","pyroglutamyl-peptidase I",0.443191896400644
+"420",-0.43619768360688,"3' UTR",14083,"Ptk2","PTK2 protein tyrosine kinase 2",-0.318645194887422
+"421",0.443171157443049,"Promoter (<=1kb)",269587,"Epb41","erythrocyte membrane protein band 4.1",0.25769049845905
+"422",0.550292619268732,"Exon (ENSMUST00000027214.3/22592, exon 9 of 15)",22592,"Ercc5","excision repair cross-complementing rodent repair deficiency, complementation group 5",0.47073880240199
+"423",-0.443615556794969,"3' UTR",213121,"Ankrd35","ankyrin repeat domain 35",-0.60757054608677
+"424",0.925977507086138,"Exon (ENSMUST00000047906.9/99929, exon 6 of 6)",99929,"Tiparp","TCDD-inducible poly(ADP-ribose) polymerase",1.44775852690952
+"425",-0.952181866466541,"Exon (ENSMUST00000136376.1/66662, exon 2 of 3)",66662,"Fbxl12os","F-box and leucine-rich repeat protein 12, opposite strand",-0.893865324926193
+"426",-0.429159058226616,"Distal Intergenic",27204,"Syn3","synapsin III",-0.382164343115586
+"427",0.550294570473861,"Promoter (<=1kb)",245468,"Pnma3","paraneoplastic antigen MA3",0.981410815987317
+"428",-0.628922347478926,"Exon (ENSMUST00000055518.12/18708, exon 15 of 16)",18708,"Pik3r1","phosphoinositide-3-kinase regulatory subunit 1",-0.529596194400005
+"429",0.545645168443437,"Exon (ENSMUST00000106312.3/233887, exon 2 of 2)",233887,"Zfp553","zinc finger protein 553",0.42773568877701
+"430",0.379477204518911,"3' UTR",14924,"Magi1","membrane associated guanylate kinase, WW and PDZ domain containing 1",0.580901418629737
+"431",-0.461905206096755,"Exon (ENSMUST00000043050.8/59031, exon 2 of 2)",59031,"Chst12","carbohydrate sulfotransferase 12",-0.959508955336557
+"432",0.481888321627005,"Promoter (1-2kb)",224093,"Fam43a","family with sequence similarity 43, member A",0.496539551274894
+"433",-0.894138352765319,"Distal Intergenic",20360,"Sema6c","sema domain, transmembrane domain (TM), and cytoplasmic domain, (semaphorin) 6C",-0.315442906537019
+"434",1.45416118085421,"Intron (ENSMUST00000124223.7/233865, intron 2 of 26)",233865,"Katnip","katanin interacting protein",-0.273821523145838
+"435",0.445071970262703,"Exon (ENSMUST00000074523.12/56471, exon 5 of 6)",56471,"Stmn4","stathmin-like 4",0.553198999220667
+"436",0.558504716724886,"Promoter (<=1kb)",338346,"Gpr21","G protein-coupled receptor 21",0.769366551692734
+"437",0.784532421108642,"Exon (ENSMUST00000050120.3/67516, exon 2 of 2)",67516,"Kctd4","potassium channel tetramerisation domain containing 4",1.20209994974886
+"438",-0.477587413864558,"3' UTR",67703,"Kirrel3","kirre like nephrin family adhesion molecule 3",-0.24777907636419
+"439",0.544261892001285,"Promoter (1-2kb)",245468,"Pnma3","paraneoplastic antigen MA3",0.981410815987317
+"440",0.73120234605422,"Promoter (2-3kb)",227737,"Niban2","niban apoptosis regulator 2",0.91453862678407
+"441",-0.603831968707958,"Promoter (1-2kb)",121021,"Cspg4","chondroitin sulfate proteoglycan 4",-0.45229786996892
+"442",-0.458141026738245,"Promoter (1-2kb)",50791,"Magi2","membrane associated guanylate kinase, WW and PDZ domain containing 2",-0.266600967269765
+"443",-0.585046666867023,"Promoter (<=1kb)",320469,"9930014A18Rik","RIKEN cDNA 9930014A18 gene",-0.646034924513961
+"444",-0.484636399122175,"Exon (ENSMUST00000061706.6/329659, exon 5 of 5)",329659,"E130311K13Rik","RIKEN cDNA E130311K13 gene",-0.624052424295911
+"445",-0.831163078580378,"3' UTR",76901,"Jade2","jade family PHD finger 2",-0.48671312448663
+"446",-0.509778837998333,"Promoter (1-2kb)",224630,"Bnip1","BCL2/adenovirus E1B interacting protein 1",-0.442289504772245
+"447",-0.758332853957348,"Distal Intergenic",230959,"Ajap1","adherens junction associated protein 1",-0.593627165353445
+"448",-0.485614392487019,"Exon (ENSMUST00000053033.13/52392, exon 3 of 3)",52392,"Macir","macrophage immunometabolism regulator",-0.254740084457567
+"449",-0.750029153891489,"3' UTR",71591,"Zfp251","zinc finger protein 251",0.316543635370985
+"450",0.664149064844939,"3' UTR",29813,"Zfp385a","zinc finger protein 385A",0.334018542780361
+"451",0.495370291882205,"Promoter (<=1kb)",56392,"Shoc2","Shoc2, leucine rich repeat scaffold protein",0.693223414915752
+"452",0.621406507780362,"3' UTR",17931,"Ppp1r12a","protein phosphatase 1, regulatory subunit 12A",0.823724763701601
+"453",0.35083178995886,"Promoter (<=1kb)",226562,"Prrc2c","proline-rich coiled-coil 2C",0.41713216435205
+"454",-0.462580959205344,"3' UTR",18708,"Pik3r1","phosphoinositide-3-kinase regulatory subunit 1",-0.529596194400005
+"455",-0.609135828727698,"Promoter (<=1kb)",319909,"Ism1","isthmin 1, angiogenesis inhibitor",1.62439936332121
+"456",-0.814385082922525,"Promoter (2-3kb)",100043757,"Zfp831","zinc finger protein 831",-1.50652559350898
+"457",0.361514684351422,"Promoter (1-2kb)",67948,"Fbxo28","F-box protein 28",0.664453237824332
+"458",0.534074164911318,"3' UTR",51902,"Rnf24","ring finger protein 24",0.628263945941944
+"459",0.336025995152494,"3' UTR",229603,"Otud7b","OTU domain containing 7B",0.40430287111881
+"460",0.601647692745477,"3' UTR",12224,"Klf5","Kruppel-like factor 5",0.939073400836316
+"461",0.601702905488416,"Promoter (2-3kb)",219228,"Pcdh17","protocadherin 17",1.20656085364286
+"462",-0.580495942267762,"3' UTR",21929,"Tnfaip3","tumor necrosis factor, alpha-induced protein 3",-1.02829164472796
+"463",-1.26039779868958,"Promoter (2-3kb)",381232,"Mirt1","myocardial infarction associated transcript 1",0.687168897734213
+"464",-0.637630391336744,"3' UTR",23863,"Dand5","DAN domain family member 5, BMP antagonist",-0.630317296353448
+"465",0.570523045651957,"Promoter (<=1kb)",329628,"Fat4","FAT atypical cadherin 4",0.995447675693374
+"466",0.442665171301416,"Promoter (<=1kb)",13642,"Efnb2","ephrin B2",0.251927784018569
+"467",0.602262845755105,"3' UTR",17295,"Met","met proto-oncogene",0.99798854175872
+"468",0.461479553392421,"Promoter (<=1kb)",73420,"Ccsap","centriole, cilia and spindle associated protein",0.448768946000265
+"469",0.610193762441112,"Exon (ENSMUST00000188142.6/244895, exon 3 of 4)",244895,"Peak1","pseudopodium-enriched atypical kinase 1",0.794075051437218
+"470",-0.584420234036594,"3' UTR",55960,"Ebag9","estrogen receptor-binding fragment-associated gene 9",-0.336303436477761
+"471",0.402176746067913,"Exon (ENSMUST00000041369.7/56468, exon 3 of 3)",56468,"Socs5","suppressor of cytokine signaling 5",0.445101576823516
+"472",-0.562760498212196,"Promoter (2-3kb)",54343,"Atf7ip","activating transcription factor 7 interacting protein",-0.750931578687955
+"473",0.748729606605451,"3' UTR",235048,"Zfp599","zinc finger protein 599",0.689799951736285
+"474",0.420727564217848,"Promoter (1-2kb)",320982,"Arl4c","ADP-ribosylation factor-like 4C",0.713894786592207
+"475",0.573488822770913,"5' UTR",19708,"Dpf2","D4, zinc and double PHD fingers family 2",0.331344428022138
+"476",0.470922688417072,"3' UTR",29810,"Bag3","BCL2-associated athanogene 3",0.680206069611809
+"477",0.636042426747603,"Exon (ENSMUST00000110238.9/68750, exon 10 of 10)",68750,"Rreb1","ras responsive element binding protein 1",0.475260303349863
+"478",0.641793707541272,"3' UTR",18805,"Pld1","phospholipase D1",0.53766464121307
+"479",0.545026711157646,"Promoter (<=1kb)",72344,"Usp36","ubiquitin specific peptidase 36",0.388507920390576
+"480",1.05056436275762,"Promoter (2-3kb)",380930,"9330188P03Rik","RIKEN cDNA 9330188P03 gene",1.06929269737414
+"481",-0.407984152248733,"3' UTR",67557,"Larp6","La ribonucleoprotein domain family, member 6",-0.397577876777015
+"482",0.468552144599794,"3' UTR",24066,"Spry4","sprouty RTK signaling antagonist 4",0.833327187672714
+"483",-0.421696360914697,"Promoter (1-2kb)",64050,"Yeats4","YEATS domain containing 4",-0.461160624718893
+"484",-0.373758393836243,"3' UTR",68796,"Tmem214","transmembrane protein 214",-0.23007157178074
+"485",0.527866780565753,"3' UTR",18039,"Nefl","neurofilament, light polypeptide",0.82876305222598
+"486",0.509434220088551,"Promoter (1-2kb)",11922,"Neurod6","neurogenic differentiation 6",0.965874297296961
+"487",0.372588294976889,"Exon (ENSMUST00000127476.7/320790, exon 3 of 3)",320790,"Chd7","chromodomain helicase DNA binding protein 7",0.345769062560183
+"488",-0.642321438990946,"Exon (ENSMUST00000180730.2/320469, exon 3 of 3)",399603,"Lratd2","LRAT domain containing 1",-0.701669680419818
+"489",-0.542796166890426,"Distal Intergenic",104156,"Etv5","ets variant 5",0.963960806538974
+"490",-0.417050666576571,"Promoter (<=1kb)",71721,"Fam13c","family with sequence similarity 13, member C",0.332586608123145
+"491",0.416391484985112,"Exon (ENSMUST00000068387.10/328572, exon 2 of 31)",328572,"Ep300","E1A binding protein p300",0.315725555213635
+"492",-0.763037720096357,"3' UTR",71683,"Gypc","glycophorin C",-0.958152858475727
+"493",1.04376870087529,"Promoter (<=1kb)",207777,"Tspoap1","TSPO associated protein 1",-0.302476723910008
+"494",-0.51572736940487,"3' UTR",211187,"Lrtm2","leucine-rich repeats and transmembrane domains 2",-0.594772739501621
+"495",0.455192980276451,"Exon (ENSMUST00000037872.9/56323, exon 4 of 5)",56323,"Dnajb5","DnaJ heat shock protein family (Hsp40) member B5",0.403208217869665
+"496",-0.599099111074995,"3' UTR",67767,"Jagn1","jagunal homolog 1",-0.412441749928064
+"497",-0.481516861575799,"Promoter (<=1kb)",56284,"Mrpl19","mitochondrial ribosomal protein L19",-0.289083242251395
+"498",0.526240197630804,"Exon (ENSMUST00000219263.1/17931, exon 18 of 25)",17931,"Ppp1r12a","protein phosphatase 1, regulatory subunit 12A",0.823724763701601
+"499",0.401414617587012,"Exon (ENSMUST00000034699.7/20255, exon 10 of 12)",20255,"Scg3","secretogranin III",0.571210205301767
+"500",-0.397474177758308,"Exon (ENSMUST00000027706.3/16980, exon 2 of 2)",16980,"Lrrn2","leucine rich repeat protein 2, neuronal",-0.415256736398855
+"501",0.608868639142983,"Exon (ENSMUST00000088987.2/15465, exon 3 of 3)",15465,"Hrh1","histamine receptor H1",1.00271538525948
+"502",-0.373512500618714,"3' UTR",380836,"Mrs2","MRS2 magnesium transporter",-0.308529444904852
+"503",0.961524995540585,"Promoter (<=1kb)",72690,"Fam110d","family with sequence similarity 110, member D",1.86957642312592
+"504",-0.822085733773853,"3' UTR",74186,"Ccdc3","coiled-coil domain containing 3",-0.252835841302354
+"505",0.750689923677094,"Promoter (<=1kb)",78603,"B230216N24Rik","RIKEN cDNA B230216N24 gene",2.30162846381065
+"506",0.746680597916673,"Promoter (1-2kb)",66617,"Ntmt1","N-terminal Xaa-Pro-Lys N-methyltransferase 1",0.274031974316009
+"507",0.491026691055106,"Promoter (2-3kb)",66840,"Wdr45b","WD repeat domain 45B",0.422406931684014
+"508",-0.485082876892547,"Promoter (<=1kb)",100504112,"Ccer2","coiled-coil glutamate-rich protein 2",-0.481487894275112
+"509",0.786304857380374,"Promoter (<=1kb)",17125,"Smad1","SMAD family member 1",0.317904540278784
+"510",0.544367510029828,"3' UTR",14367,"Fzd5","frizzled class receptor 5",0.748120973720019
+"511",0.532002906905057,"Exon (ENSMUST00000091556.11/228662, exon 5 of 5)",228662,"Btbd3","BTB (POZ) domain containing 3",1.19177016964935
+"512",0.831068249802848,"Intron (ENSMUST00000220757.1/100504101, intron 2 of 2)",100504101,"Gm20063","predicted gene, 20063",0.95915415330969
+"513",-0.770629202258378,"Promoter (<=1kb)",75425,"Tti1","TELO2 interacting protein 1",-0.637425019929659
+"514",-0.991624465152905,"Promoter (<=1kb)",20515,"Slc20a1","solute carrier family 20, member 1",0.602989980044854
+"515",-0.464815432149801,"3' UTR",14816,"Grm1","glutamate receptor, metabotropic 1",-0.409199456278504
+"516",0.498926802852601,"3' UTR",230784,"Sesn2","sestrin 2",0.940963984006336
+"517",0.633681458229082,"Promoter (<=1kb)",244059,"Chd2","chromodomain helicase DNA binding protein 2",1.18500571495752
+"518",-0.585379430744988,"3' UTR",18389,"Oprl1","opioid receptor-like 1",-0.741308890680837
+"519",-0.506388668389627,"Exon (ENSMUST00000108297.2/381511, exon 2 of 2)",381511,"Pdp1","pyruvate dehydrogenase phosphatase catalytic subunit 1",-0.397775047370869
+"520",0.405904232577817,"3' UTR",239528,"Ago2","argonaute RISC catalytic subunit 2",0.429950697721584
+"521",-0.480917217551886,"Promoter (2-3kb)",230577,"Pars2","prolyl-tRNA synthetase (mitochondrial)(putative)",-0.65380712069649
+"522",0.65066011507385,"Promoter (1-2kb)",80288,"Bcl9l","B cell CLL/lymphoma 9-like",0.255940936851134
+"523",0.571472579890335,"Exon (ENSMUST00000043624.8/327987, exon 9 of 30)",327987,"Med13","mediator complex subunit 13",0.845546607743612
+"524",-0.367929148279901,"Exon (ENSMUST00000098614.8/622675, exon 4 of 15)",622675,"Zfp827","zinc finger protein 827",-0.709828955006806
+"525",-0.655669193590558,"Exon (ENSMUST00000030033.4/68016, exon 2 of 2)",68016,"Cavin4","caveolae associated 4",-0.715975915549519
+"526",0.478186997324927,"5' UTR",230597,"Zfyve9","zinc finger, FYVE domain containing 9",0.572621937580955
+"527",0.442052275310038,"Promoter (1-2kb)",27205,"Podxl","podocalyxin-like",0.326250701457753
+"528",0.56518879239994,"Exon (ENSMUST00000021794.13/18003, exon 6 of 8)",18003,"Nedd9","neural precursor cell expressed, developmentally down-regulated gene 9",0.652894768232094
+"529",0.435377574591744,"Exon (ENSMUST00000133154.6/329679, exon 14 of 18)",329679,"Fnip2","folliculin interacting protein 2",0.515080137188267
+"530",-0.566715328278264,"3' UTR",270190,"Ephb1","Eph receptor B1",-0.406365760858366
+"531",0.359850661096761,"Exon (ENSMUST00000182149.7/226562, exon 13 of 35)",226562,"Prrc2c","proline-rich coiled-coil 2C",0.41713216435205
+"532",0.900053395546241,"Intron (ENSMUST00000165175.7/64176, intron 1 of 12)",64176,"Sv2b","synaptic vesicle glycoprotein 2 b",-0.216419168897897
+"533",-0.440252897928226,"3' UTR",67774,"Borcs5","BLOC-1 related complex subunit 5",-0.421315136065559
+"534",-0.59483702830086,"3' UTR",20846,"Stat1","signal transducer and activator of transcription 1",-0.312371816950919
+"535",0.561871986577385,"Promoter (1-2kb)",18991,"Pou3f1","POU domain, class 3, transcription factor 1",0.466668549054346
+"536",0.803247590863043,"Promoter (<=1kb)",52521,"Zfp622","zinc finger protein 622",0.240472536516001
+"537",-0.241723224489328,"Exon (ENSMUST00000087517.9/23856, exon 16 of 16)",23856,"Dido1","death inducer-obliterator 1",-0.217917630036259
+"538",0.397049660834138,"Exon (ENSMUST00000059588.7/382051, exon 2 of 2)",382051,"Pdp2","pyruvate dehyrogenase phosphatase catalytic subunit 2",0.506525005222155
+"539",-0.537696247362581,"3' UTR",13445,"Cdk2ap1","CDK2 (cyclin-dependent kinase 2)-associated protein 1",0.910496093985119
+"540",-0.444112940683434,"Promoter (1-2kb)",67893,"Tmem86a","transmembrane protein 86A",-0.516964631540546
+"541",-0.578792229033142,"Exon (ENSMUST00000213154.1/214552, exon 4 of 32)",214552,"Cep164","centrosomal protein 164",-0.559649202692559
+"542",-0.429856374865159,"Promoter (1-2kb)",18012,"Neurod1","neurogenic differentiation 1",-0.430568938710944
+"543",0.412173979144833,"3' UTR",67434,"Ankrd33b","ankyrin repeat domain 33B",0.561644363223246
+"544",0.747506417798887,"Intron (ENSMUST00000122041.7/238871, intron 3 of 16)",238871,"Pde4d","phosphodiesterase 4D, cAMP specific",0.633894813050315
+"545",-0.631897794349107,"Promoter (<=1kb)",107585,"Dio3","deiodinase, iodothyronine type III",-1.31595496900713
+"546",0.458027155131974,"3' UTR",107586,"Ovol2","ovo like zinc finger 2",0.414073789986884
+"547",-0.384695790743281,"Promoter (<=1kb)",240514,"Ccdc85b","coiled-coil domain containing 85B",-0.437464497409781
+"548",-0.523637425632861,"3' UTR",22169,"Cmpk2","cytidine monophosphate (UMP-CMP) kinase 2, mitochondrial",-0.688538216588578
+"549",-0.84684561618306,"Exon (ENSMUST00000055745.4/244202, exon 3 of 3)",244202,"Nlrp10","NLR family, pyrin domain containing 10",-1.13369348986656
+"550",0.768259118719847,"Intron (ENSMUST00000189134.1/270192, intron 1 of 3)",270192,"Rab6b","RAB6B, member RAS oncogene family",0.154499650225213
+"551",-0.40404845661683,"3' UTR",16515,"Kcnj12","potassium inwardly-rectifying channel, subfamily J, member 12",-0.640644453165124
+"552",0.552963416931071,"Promoter (<=1kb)",69260,"Ing2","inhibitor of growth family, member 2",0.609113037436843
+"553",0.866186088823387,"Distal Intergenic",12810,"Coch","cochlin",0.737350223928179
+"554",0.485533543821135,"Promoter (1-2kb)",114565,"Zbtb21","zinc finger and BTB domain containing 21",0.55159630674427
+"555",-0.462637064402577,"Promoter (<=1kb)",121021,"Cspg4","chondroitin sulfate proteoglycan 4",-0.45229786996892
+"556",-0.564276028256204,"Promoter (<=1kb)",72080,"Sapcd2","suppressor APC domain containing 2",-0.938356977768821
+"557",-0.25635278692605,"5' UTR",74012,"Rap2b","RAP2B, member of RAS oncogene family",-0.280019291442323
+"558",0.483876015249659,"Exon (ENSMUST00000036044.8/216345, exon 5 of 35)",216345,"Zfc3h1","zinc finger, C3H1-type containing",0.728893497271722
+"559",-0.557795095718454,"Exon (ENSMUST00000030036.5/56710, exon 7 of 8)",56710,"Brinp1","bone morphogenic protein/retinoic acid inducible neural specific 1",0.566498839056043
+"560",-0.470081252149911,"3' UTR",69581,"Rhou","ras homolog family member U",-0.555812677507855
+"561",0.494180346687588,"Exon (ENSMUST00000202537.1/ENSMUST00000202537.1, exon 1 of 2)",231293,"Cwh43","cell wall biogenesis 43 C-terminal homolog",0.412937982055934
+"562",0.528400645128962,"3' UTR",105663,"Thtpa","thiamine triphosphatase",-0.265794053396643
+"563",0.404835132528029,"Exon (ENSMUST00000191428.6/14107, exon 10 of 27)",14107,"Fat1","FAT atypical cadherin 1",0.660772469530926
+"564",0.351982726121172,"3' UTR",22032,"Traf4","TNF receptor associated factor 4",0.309241320595495
+"565",0.405861171835215,"Promoter (1-2kb)",20539,"Slc7a5","solute carrier family 7 (cationic amino acid transporter, y+ system), member 5",0.297297883128787
+"566",0.736321953037312,"Promoter (<=1kb)",18187,"Nrp2","neuropilin 2",0.654765271118923
+"567",-0.581732457146032,"Exon (ENSMUST00000147909.7/214253, exon 4 of 4)",214253,"Etnk2","ethanolamine kinase 2",-1.42475846466021
+"568",0.575639419768414,"Promoter (2-3kb)",214855,"Arid5a","AT rich interactive domain 5A (MRF1-like)",1.05563646387501
+"569",0.450723453403651,"Promoter (<=1kb)",69131,"Cdk12","cyclin-dependent kinase 12",0.622604332377584
+"570",0.777561698116467,"Intron (ENSMUST00000225434.1/ENSMUST00000225434.1, intron 2 of 2)",14180,"Fgf9","fibroblast growth factor 9",0.807512396985163
+"571",-0.653781173735931,"3' UTR",103511,"Calhm5","calcium homeostasis modulator family member 5",-0.864286317237693
+"572",0.718783937199496,"Promoter (<=1kb)",14113,"Fbl","fibrillarin",0.792730318365401
+"573",-0.462495571141207,"Exon (ENSMUST00000027422.6/71781, exon 4 of 5)",71781,"Slc16a14","solute carrier family 16 (monocarboxylic acid transporters), member 14",-0.582296145325198
+"574",-0.66392645809594,"Promoter (<=1kb)",16891,"Lipg","lipase, endothelial",1.21696882115219
+"575",-0.565768058189171,"3' UTR",74729,"Setmar","SET domain without mariner transposase fusion",-0.833289504296989
+"576",-0.467641784626156,"Promoter (<=1kb)",27221,"Chaf1a","chromatin assembly factor 1, subunit A (p150)",-0.756621396804207
+"577",0.453777087078249,"3' UTR",22253,"Unc5c","unc-5 netrin receptor C",0.596275714318416
+"578",0.542118831669342,"Exon (ENSMUST00000192284.5/107508, exon 18 of 20)",107508,"Eprs","glutamyl-prolyl-tRNA synthetase",0.668897069656163
+"579",0.389047198896563,"Promoter (<=1kb)",433022,"Plcxd2","phosphatidylinositol-specific phospholipase C, X domain containing 2",0.794296867904717
+"580",0.571494637301864,"Promoter (<=1kb)",68833,"Pdcl3","phosducin-like 3",0.724791870855532
+"581",0.366357881146324,"3' UTR",56471,"Stmn4","stathmin-like 4",0.553198999220667
+"582",0.732749905769916,"3' UTR",245424,"Gpr101","G protein-coupled receptor 101",1.34167035502692
+"583",0.634551607004678,"Promoter (<=1kb)",271970,"Arsj","arylsulfatase J",0.598401456584546
+"584",-0.634673625166686,"Exon (ENSMUST00000028767.8/76246, exon 3 of 18)",76246,"Rtf1","RTF1, Paf1/RNA polymerase II complex component",-0.248674387058306
+"585",0.547822316861565,"Promoter (<=1kb)",100504101,"Gm20063","predicted gene, 20063",0.95915415330969
+"586",0.415785900522448,"Promoter (<=1kb)",13800,"Enah","ENAH actin regulator",0.541606606198255
+"587",0.514463765328377,"Promoter (<=1kb)",23836,"Cdh20","cadherin 20",0.458024006102845
+"588",-0.322739052267218,"3' UTR",71702,"Cdc5l","cell division cycle 5-like (S. pombe)",-0.268303790632192
+"589",0.518873274316475,"Promoter (<=1kb)",216345,"Zfc3h1","zinc finger, C3H1-type containing",0.728893497271722
+"590",-0.613175436173427,"Exon (ENSMUST00000144993.1/403201, exon 7 of 7)",403201,"5330416C01Rik","RIKEN cDNA 5330416C01 gene",-0.721475989825727
+"591",-0.397633388474706,"Exon (ENSMUST00000027867.6/74895, exon 3 of 6)",74895,"Ccdc181","coiled-coil domain containing 181",-0.389609546794213
+"592",-0.421717562786356,"Promoter (<=1kb)",16322,"Inha","inhibin alpha",-0.301960400203282
+"593",0.453162279381109,"5' UTR",78834,"Zfp623","zinc finger protein 623",0.542661750595696
+"594",-0.677721766872793,"Promoter (2-3kb)",100504112,"Ccer2","coiled-coil glutamate-rich protein 2",-0.481487894275112
+"595",0.526363060172868,"3' UTR",244882,"Tnfaip8l3","tumor necrosis factor, alpha-induced protein 8-like 3",0.792409933776002
+"596",0.648857725262439,"Exon (ENSMUST00000174236.7/14537, exon 3 of 3)",14537,"Gcnt1","glucosaminyl (N-acetyl) transferase 1, core 2",1.83206635532285
+"597",0.456946115357788,"3' UTR",12388,"Ctnnd1","catenin (cadherin associated protein), delta 1",0.980949046791485
+"598",0.731774124279188,"Intron (ENSMUST00000168598.7/77097, intron 4 of 4)",77097,"Tanc2","tetratricopeptide repeat, ankyrin repeat and coiled-coil containing 2",0.425591071811746
+"599",0.390030217342,"Exon (ENSMUST00000041369.7/56468, exon 3 of 3)",56468,"Socs5","suppressor of cytokine signaling 5",0.445101576823516
+"600",-0.735859958248427,"Distal Intergenic",217109,"Utp18","UTP18 small subunit processome component",-0.322676786734428
+"601",0.434483351245,"Promoter (<=1kb)",56710,"Brinp1","bone morphogenic protein/retinoic acid inducible neural specific 1",0.566498839056043
+"602",-0.415791551990204,"3' UTR",12289,"Cacna1d","calcium channel, voltage-dependent, L type, alpha 1D subunit",-0.592545826317067
+"603",0.419171893453614,"Promoter (<=1kb)",241568,"Lrrc4c","leucine rich repeat containing 4C",0.993365369660793
+"604",0.456670711103867,"3' UTR",71720,"Osbpl3","oxysterol binding protein-like 3",1.01174393905006
+"605",0.408664655605482,"3' UTR",16835,"Ldlr","low density lipoprotein receptor",0.573134793709165
+"606",0.717810485285749,"Intron (ENSMUST00000102732.9/14089, intron 20 of 25)",14089,"Fap","fibroblast activation protein",0.521714683819417
+"607",0.650594234284515,"Exon (ENSMUST00000039419.11/242050, exon 6 of 7)",242050,"Igsf10","immunoglobulin superfamily, member 10",0.731051495978355
+"608",0.543024837534303,"Promoter (<=1kb)",327987,"Med13","mediator complex subunit 13",0.845546607743612
+"609",0.41615838677002,"Promoter (<=1kb)",17936,"Nab1","Ngfi-A binding protein 1",0.661360120536471
+"610",-0.388143015994196,"3' UTR",11307,"Abcg1","ATP binding cassette subfamily G member 1",-0.518126917474244
+"611",0.393972378785673,"Promoter (<=1kb)",66647,"Nsmce3","NSE3 homolog, SMC5-SMC6 complex component",0.674301115948226
+"612",0.395332811568212,"Promoter (<=1kb)",17872,"Ppp1r15a","protein phosphatase 1, regulatory subunit 15A",0.705354351777497
+"613",0.564247096496942,"Promoter (<=1kb)",56715,"Rabgef1","RAB guanine nucleotide exchange factor (GEF) 1",0.931332242755698
+"614",0.433869537611713,"Exon (ENSMUST00000109099.3/234776, exon 4 of 4)",234776,"Atmin","ATM interactor",0.473211780589387
+"615",-0.619929206680955,"3' UTR",68509,"Ptx4","pentraxin 4",-1.30092080045353
+"616",-0.372036666888163,"Exon (ENSMUST00000045487.3/69581, exon 3 of 3)",69581,"Rhou","ras homolog family member U",-0.555812677507855
+"617",-0.455652739762276,"Promoter (<=1kb)",13070,"Cyp11a1","cytochrome P450, family 11, subfamily a, polypeptide 1",-0.647474858717945
+"618",-0.625290074219958,"3' UTR",11783,"Apaf1","apoptotic peptidase activating factor 1",-0.818289449388977
+"619",0.410219574184195,"Promoter (1-2kb)",68750,"Rreb1","ras responsive element binding protein 1",0.475260303349863
+"620",0.700823998672713,"5' UTR",22724,"Zbtb7b","zinc finger and BTB domain containing 7B",0.983104718646327
+"621",-0.353234473486068,"3' UTR",13844,"Ephb2","Eph receptor B2",-0.744523445686277
+"622",0.470787406766826,"Exon (ENSMUST00000136348.7/320376, exon 9 of 15)",320376,"Bcorl1","BCL6 co-repressor-like 1",0.80133267682671
+"623",0.565916306755002,"Exon (ENSMUST00000235569.1/ENSMUST00000235569.1, exon 4 of 8)",74931,"4930481A15Rik","RIKEN cDNA 4930481A15 gene",-1.17050872618103
+"624",0.582582435224243,"Promoter (<=1kb)",14219,"Ccn2","cellular communication network factor 2",-0.371685105240361
+"625",-0.520240855950102,"Promoter (2-3kb)",20360,"Sema6c","sema domain, transmembrane domain (TM), and cytoplasmic domain, (semaphorin) 6C",-0.315442906537019
+"626",0.315398196281112,"Exon (ENSMUST00000031097.7/231151, exon 2 of 2)",231151,"Tada2b","transcriptional adaptor 2B",0.391451300943221
+"627",0.489641945292724,"Promoter (<=1kb)",67603,"Dusp6","dual specificity phosphatase 6",0.50001821440446
+"628",-0.341382290132286,"3' UTR",319804,"Glt1d1","glycosyltransferase 1 domain containing 1",-0.309916069077281
+"629",0.470180434980226,"3' UTR",195646,"Hs3st2","heparan sulfate (glucosamine) 3-O-sulfotransferase 2",0.597630570598785
+"630",-0.518373099516669,"Distal Intergenic",16331,"Inpp5d","inositol polyphosphate-5-phosphatase D",-0.881517025438724
+"631",0.492710329712418,"Promoter (2-3kb)",240514,"Ccdc85b","coiled-coil domain containing 85B",-0.437464497409781
+"632",0.546877679207686,"Exon (ENSMUST00000116639.3/71373, exon 2 of 2)",71373,"Prr16","proline rich 16",0.719291393436463
+"633",0.469367963200642,"Promoter (1-2kb)",219228,"Pcdh17","protocadherin 17",1.20656085364286
+"634",0.408077004193571,"3' UTR",16519,"Kcnj3","potassium inwardly-rectifying channel, subfamily J, member 3",0.714625380832131
