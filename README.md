@@ -30,38 +30,3 @@ The data analysis was performed on Ibex. The QC of the raw data, adapter removal
 Differential gene expression analysis (results available in folder _DGEA_) and differential methylation analysis (results available in folder _DiffBind_) were performed with R scripts, available in _scripts_ folder. 
 
 The _conda_ folder contains the `.yaml` files for the mapping and trimming steps. The logs for each step were stored in the _logs_ folder (empty since its not relevant to store those files here). _mm39_ and _mm10_ contained the annotation used for some analysis steps, both versions are used since some R packages still depend on mm10. _config_ folder has the `.yaml` file for snakemake.
-
-The _qPCR_ and _MEA_ folders contain the R scripts to analyze the qPCR and neural activity recordings, respectively. These folders are NOT on Ibex.
-
-Directories and content 
------
-> [!NOTE]
-> Raw, trimmed, and MACS data is unavailable here due to size restrictions.
-
-The following tree describes what each folder contains, recreating the working directory on Ibex. 
-
-```
-m6A-LCIE 
-  ├── raw_data
-  ├── trimmed_data
-  ├── mapped_data
-  ├── MACS
-  ├── conda
-  ├── config
-  ├── scripts
-  ├── logs
-  ├── mm39
-  ├── mm10
-  ├── rules
-  ├── scripts
-  ├── DiffBind
-  ├── DGEA
-  ├── qPCR
-  └── MEA
-```
-
-**How to run the pipeline:**
-
-```
-
-```
